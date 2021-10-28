@@ -7,7 +7,7 @@
 
     <link
       rel="shortcut icon"
-      href="/assets/images/logo.png"
+      href="./assets/images/logo.png"
       type="image/x-icon"
     />
 
@@ -28,11 +28,11 @@
     <title>Eagan Warsana Energi</title>
   </head>
   <body class="bg-light">
-    <div class="full-height d-flex flex-column">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="full-height hero-content d-flex flex-column">
+      <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
           <a class="navbar-brand" href="#">
-            <img src="/assets/images/logo.png" alt="logo-company" />
+            <img src="./assets/images/logo.png" alt="logo-company" />
           </a>
           <button
             class="navbar-toggler"
@@ -99,18 +99,54 @@
             </a>
           </div>
         </div>
-      </nav>
+      </nav> -->
+      <div class="my-nav">
+        <div class="container">
+          <a href="/" class="logo">
+            <img
+              src="./assets/images/logo.png"
+              alt=""
+              class="img-fluid navbar-brand"
+            />
+          </a>
+          <div class="hamburger-menu">
+            <span></span><span></span><span></span>
+          </div>
+          <ul class="menus value-navbar">
+            <li class="list-menu"><a class="active" href="/">HOME</a></li>
+            <li class="has-child list-menu">
+              <span>ABOUT</span>
+              <ul class="child-menu">
+                <li class="list-child-menu">SUMMARY</li>
+                <li class="list-child-menu">LINES OF BUSINESS</li>
+                <li class="list-child-menu">VISION</li>
+                <li class="list-child-menu">MISSION</li>
+              </ul>
+            </li>
+            <li class="list-menu">LEGALITY</li>
+            <li class="has-child list-menu">
+              <span>PROJECTS</span>
+              <ul class="child-menu">
+                <li class="list-child-menu">EXPERIENCE</li>
+                <li class="list-child-menu">PORTFOLIO</li>
+              </ul>
+            </li>
+            <li class="list-menu">CONTACT US</li>
+          </ul>
 
+          <a
+            href="tel:0315610905"
+            class="btn shadow-lg mt-md-0 mt-2 btn-lg value-navbar hover-button"
+          >
+            <span>
+              <i class="fas fa-phone-alt"></i>
+            </span>
+            <span class="d-md-none ms-1 d-md-block">Call</span>
+          </a>
+        </div>
+      </div>
       <div class="container h-100">
-        <div
-          class="
-            row
-            hero-content
-            h-100
-            align-items-center
-            justify-content-center
-          "
-        >
+        <div class="row h-100 align-items-center justify-content-center">
           <div
             class="
               col-lg-6 col-xl-7
@@ -123,13 +159,13 @@
               Persistent to the passion for customers, quality foucs, safety
               environment, personel intergrity, team work and fun
             </div>
-            <div class="hover-button btn btn-lg mt-2 learn-more shadow">
+            <div class="hover-button btn btn-lg mt-2 learn-more shadow-lg">
               <span>Learn More</span>
             </div>
           </div>
           <div class="col-lg-6 col-xl-5 d-lg-block d-none">
             <img
-              src="./assets/images/hero-content.png"
+              src="./assets/images/img.png"
               alt="img-hero-content"
               class="img-fluid"
             />
@@ -138,10 +174,23 @@
       </div>
     </div>
 
+    <section class="yellow">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#f8f9fa"
+          fill-opacity="1"
+          d="M0,64L1440,256L1440,0L0,0Z"
+        ></path>
+      </svg>
+      <div class="container">
+        <div class="title">Summary</div>
+      </div>
+    </section>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
