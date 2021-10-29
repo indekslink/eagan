@@ -112,37 +112,51 @@
           <div class="hamburger-menu">
             <span></span><span></span><span></span>
           </div>
-          <ul class="menus value-navbar">
-            <li class="list-menu"><a class="active" href="/">HOME</a></li>
-            <li class="has-child list-menu">
-              <span>ABOUT</span>
-              <ul class="child-menu">
-                <li class="list-child-menu">SUMMARY</li>
-                <li class="list-child-menu">LINES OF BUSINESS</li>
-                <li class="list-child-menu">VISION</li>
-                <li class="list-child-menu">MISSION</li>
-              </ul>
-            </li>
-            <li class="list-menu">LEGALITY</li>
-            <li class="has-child list-menu">
-              <span>PROJECTS</span>
-              <ul class="child-menu">
-                <li class="list-child-menu">EXPERIENCE</li>
-                <li class="list-child-menu">PORTFOLIO</li>
-              </ul>
-            </li>
-            <li class="list-menu">CONTACT US</li>
-          </ul>
 
-          <a
-            href="tel:0315610905"
-            class="btn shadow-lg mt-md-0 mt-2 btn-lg value-navbar hover-button"
-          >
-            <span>
-              <i class="fas fa-phone-alt"></i>
-            </span>
-            <span class="d-md-none ms-1 d-md-block">Call</span>
-          </a>
+          <div class="value-navbar">
+            <ul class="menus">
+              <li class="list-menu"><a class="active" href="/">HOME</a></li>
+              <li class="has-child list-menu">
+                <span>ABOUT</span>
+                <ul class="child-menu shadow">
+                  <li class="list-child-menu">SUMMARY</li>
+                  <li class="list-child-menu">LINES OF BUSINESS</li>
+                  <li class="list-child-menu">VISION</li>
+                  <li class="list-child-menu">MISSION</li>
+                </ul>
+              </li>
+              <li class="list-menu"><a href="">LEGALITY</a></li>
+              <li class="has-child list-menu">
+                <span>PROJECTS</span>
+                <ul class="child-menu shadow">
+                  <li class="list-child-menu">EXPERIENCE</li>
+                  <li class="list-child-menu">PORTFOLIO</li>
+                </ul>
+              </li>
+              <li class="list-menu"><a href="">CONTACT US</a></li>
+            </ul>
+
+            <div class="d-flex ms-md-5 ms-0 mt-md-0 mt-5">
+              <a
+                href="tel:0315610905"
+                class="btn mx-2 text-dark btn-lg btn-warning"
+              >
+                <span>
+                  <i class="fas fa-phone-alt"></i>
+                </span>
+                <span class="ms-1 d-md-none d-block">0315610905</span>
+              </a>
+              <a
+                href="mail:"
+                class="btn btn-lg mx-2 text-dark btn-outline-warning"
+              >
+                <span>
+                  <i class="fas fa-envelope"></i>
+                </span>
+                <span class="ms-1 d-md-none d-block">Send Mail</span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
       <div class="container h-100">
@@ -154,14 +168,14 @@
               tablet-img-hero-content
             "
           >
-            <div class="title">Eagan Warsana Energi</div>
+            <div class="title">PT. Eagan Warsana Energi</div>
             <div class="subtitle">
               Persistent to the passion for customers, quality foucs, safety
               environment, personel intergrity, team work and fun
             </div>
-            <div class="hover-button btn btn-lg mt-2 learn-more shadow-lg">
+            <button class="btn-warning btn btn-lg mt-2 learn-more shadow-lg">
               <span>Learn More</span>
-            </div>
+            </button>
           </div>
           <div class="col-lg-6 col-xl-5 d-lg-block d-none">
             <img
@@ -174,16 +188,130 @@
       </div>
     </div>
 
-    <section class="yellow">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#f8f9fa"
-          fill-opacity="1"
-          d="M0,64L1440,256L1440,0L0,0Z"
-        ></path>
-      </svg>
+    <section class="my-5">
       <div class="container">
-        <div class="title">Summary</div>
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row justify-content-center text-center">
+                <div class="col-md-8 col-12">
+                  <img
+                    class="img-fluid"
+                    src="./assets/images/summary-1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="col-md-8 col-12">
+                  <div class="title fs-3 mb-4">
+                    <span
+                      class="border-bottom fw-bolder border-success border-3"
+                      >SUMMARY</span
+                    >
+                  </div>
+                  <div class="description lh-md">
+                    PT. Eagan Warsana Energi, EAGAN, is a growing medium size
+                    Engineering Procurement Construction (EPC) company which is
+                    specializing in civil engineering, platform work, pipeline
+                    system, steel structure and electrical services. Establised
+                    on March 2011, EAGAN has already proven capable of playing a
+                    sound role in civil, mechanical and steel structures
+                    projects with all project performed in excellent condition
+                    thoughout Indonesia
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row justify-content-center text-center">
+                <div class="col-md-8 col-12">
+                  <img
+                    class="img-fluid"
+                    src="./assets/images/visi.png"
+                    alt=""
+                  />
+                </div>
+                <div class="col-md-8 col-12">
+                  <div class="title fs-3 mb-4">
+                    <span
+                      class="border-bottom fw-bolder border-success border-3"
+                      >VISION</span
+                    >
+                  </div>
+                  <div class="description lh-md">
+                    Our aim is ultimately become a trustworthy and an
+                    excellent-leading Engineering Procurement Construction (EPC)
+                    company specializing in civil engineer, mechanical
+                    electrical and steel structure work with the purspose of
+                    giving a customer-statisfaction service to all stakeholders
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row justify-content-center text-center">
+                <div class="col-md-8 col-12">
+                  <img
+                    class="img-fluid"
+                    src="./assets/images/misi.png"
+                    alt=""
+                  />
+                </div>
+                <div class="col-md-8 col-12">
+                  <div class="title fs-3 mb-4">
+                    <span
+                      class="border-bottom fw-bolder border-success border-3"
+                      >MISSION</span
+                    >
+                  </div>
+                  <div class="description lh-md text-start">
+                    <ul>
+                      <li class="my-2">
+                        Utilizing a moderate project management support system
+                        to ensure our commitment to the clients in term of
+                        budget and schedule
+                      </li>
+                      <li class="my-2">
+                        Operating a tight company policy and continuous
+                        improvement in Quality and Safety
+                      </li>
+                      <li class="my-2">
+                        Developing an excellent communication system along with
+                        the responsible solution to our strategic partners and
+                        clients
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <script
