@@ -10,6 +10,7 @@
   font-size: 1rem;
   font-weight: bold;
   opacity: 0.4;
+  white-space: nowrap;
   color: rgb(27, 27, 27);
 }
 .my-nav :is(.list-menu a, .list-menu span).active,
@@ -148,7 +149,7 @@
   margin-bottom: 3rem;
 }
 .hero-content .title {
-  font-size: 4rem;
+  font-size: calc(3vw + 2.5rem);
   font-weight: bolder;
 }
 .hero-content .subtitle {
@@ -294,7 +295,23 @@ section.space-y {
 #lines-business .items {
   padding: 0.5rem 0;
 }
+.to-top,
+.navigation-bottom {
+  position: fixed;
+  bottom: -100%;
+  opacity: 0;
+  right: 1rem;
+  transition: 0.5s ease;
+  z-index: 99999;
+}
+.navigation-bottom {
+  right: 1.2rem !important;
+}
 
+.to-top.show-navigation {
+  bottom: 1rem;
+  opacity: 1;
+}
 /* laptop small */
 @media (max-width: 991.98px) {
   .hero-content {
@@ -336,18 +353,26 @@ section.space-y {
   .my-nav ul {
     flex-direction: column;
   }
-  .my-nav .hamburger-menu {
+  .hamburger-menu {
     display: flex;
   }
-  .my-nav .hamburger-menu.fixed {
+  .hamburger-menu.fixed {
     position: fixed;
     top: 1rem;
     right: 1rem;
     z-index: 99999999;
   }
-  .hero-content .title {
-    font-size: 2.5rem;
+  .to-top.show-navigation {
+    bottom: 3rem;
   }
+  .navigation-bottom.show-navigation {
+    bottom: 1rem;
+    z-index: 9999999;
+    opacity: 1;
+  }
+  /* .hero-content .title {
+    font-size: 2.5rem;
+  } */
   .hero-content .subtitle {
     font-size: 1.3rem;
   }
