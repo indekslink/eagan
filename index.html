@@ -28,78 +28,10 @@
     <title>Eagan Warsana Energi</title>
   </head>
   <body class="bg-light">
+    <div class="btn to-top btn-warning">
+      <i class="fas fa-arrow-up"></i>
+    </div>
     <div class="full-height hero-content d-flex flex-column">
-      <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <img src="./assets/images/logo.png" alt="logo-company" />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse justify-content-around navbar-collapse"
-            id="navbarSupportedContent"
-          >
-            <ul class="navbar-nav mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" href="#">HOME</a>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  ABOUT
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">SUMMARY</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">LINES OF BUSINESS</a>
-                  </li>
-                  <li><a class="dropdown-item" href="#">VISION</a></li>
-                  <li><a class="dropdown-item" href="#">MISSION</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/about">LEGALITY</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/about">PROJECT EXPERIENCE</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/about">PORTFOLIO PROJECT</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/about">CONTACT US</a>
-              </li>
-            </ul>
-
-            <a
-              href="tel:0315610905"
-              class="btn shadow mt-md-0 mt-2 btn-lg hover-button"
-            >
-              <span>
-                <i class="fas fa-phone-alt"></i>
-              </span>
-              <span class="d-md-none ms-1 d-md-block">Call</span>
-            </a>
-          </div>
-        </div>
-      </nav> -->
       <div class="my-nav">
         <div class="container">
           <a href="/" class="logo">
@@ -120,9 +52,9 @@
                 <span>ABOUT</span>
                 <ul class="child-menu shadow">
                   <li class="list-child-menu">SUMMARY</li>
-                  <li class="list-child-menu">LINES OF BUSINESS</li>
                   <li class="list-child-menu">VISION</li>
                   <li class="list-child-menu">MISSION</li>
+                  <li class="list-child-menu">LINES OF BUSINESS</li>
                 </ul>
               </li>
               <li class="list-menu"><a href="">LEGALITY</a></li>
@@ -139,7 +71,7 @@
             <div class="d-flex ms-md-5 ms-0 mt-md-0 mt-5">
               <a
                 href="tel:0315610905"
-                class="btn mx-2 text-dark btn-lg btn-warning"
+                class="btn mx-2 shadow-sm text-dark btn-lg btn-warning"
               >
                 <span>
                   <i class="fas fa-phone-alt"></i>
@@ -148,7 +80,7 @@
               </a>
               <a
                 href="mail:"
-                class="btn btn-lg mx-2 text-dark btn-outline-warning"
+                class="btn btn-lg mx-2 shadow-sm text-dark btn-outline-warning"
               >
                 <span>
                   <i class="fas fa-envelope"></i>
@@ -188,12 +120,13 @@
       </div>
     </div>
 
-    <section class="my-5">
+    <section class="space-y" id="company">
       <div class="container">
         <div
           id="carouselExampleIndicators"
           class="carousel slide"
           data-bs-ride="carousel"
+          data-bs-pause="false"
         >
           <div class="carousel-indicators">
             <button
@@ -228,11 +161,8 @@
                   />
                 </div>
                 <div class="col-md-8 col-12">
-                  <div class="title fs-3 mb-4">
-                    <span
-                      class="border-bottom fw-bolder border-success border-3"
-                      >SUMMARY</span
-                    >
+                  <div class="title fs-1 mb-4">
+                    <span class="fw-bolder">SUMMARY</span>
                   </div>
                   <div class="description lh-md">
                     PT. Eagan Warsana Energi, EAGAN, is a growing medium size
@@ -257,11 +187,8 @@
                   />
                 </div>
                 <div class="col-md-8 col-12">
-                  <div class="title fs-3 mb-4">
-                    <span
-                      class="border-bottom fw-bolder border-success border-3"
-                      >VISION</span
-                    >
+                  <div class="title fs-1 mb-4">
+                    <span class="fw-bolder">VISION</span>
                   </div>
                   <div class="description lh-md">
                     Our aim is ultimately become a trustworthy and an
@@ -283,11 +210,8 @@
                   />
                 </div>
                 <div class="col-md-8 col-12">
-                  <div class="title fs-3 mb-4">
-                    <span
-                      class="border-bottom fw-bolder border-success border-3"
-                      >MISSION</span
-                    >
+                  <div class="title fs-1 mb-4">
+                    <span class="fw-bolder">MISSION</span>
                   </div>
                   <div class="description lh-md text-start">
                     <ul>
@@ -310,6 +234,208 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="space-y yellow" id="lines-business">
+      <div class="container">
+        <div class="fs-1 fw-bold mb-5 text-center">
+          <span>LINES OF BUSINESS</span>
+        </div>
+        <div class="row gy-5 justify-content-center">
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="fs-4 mb-2 fw-bold">Civil</div>
+            <div class="d-inline-block">
+              <div class="items">Cut and Fill</div>
+              <div class="items">Excavation</div>
+              <div class="items">Foundation</div>
+              <div class="items">Civil Work</div>
+              <div class="items">Pilling</div>
+              <div class="items">Berth</div>
+              <div class="items">Building and Others</div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="fs-4 mb-2 fw-bold">Power Plant</div>
+            <div class="d-inline-block">
+              <div class="items">Steel Structure</div>
+              <div class="items">Storage Sytem</div>
+              <div class="items">Pipeline</div>
+              <div class="items">Conveying Sytem</div>
+              <div class="items">Boiler</div>
+              <div class="items">Water Treatment Plant</div>
+              <div class="items">Ducting</div>
+              <div class="items">Refractory Sytem and Other</div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="fs-4 mb-2 fw-bold">Oil and Gas Service</div>
+            <div class="d-inline-block">
+              <div class="items">Liquid and Gas Storage System</div>
+              <div class="items">Transport System</div>
+              <div class="items">Pipeline System</div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="fs-4 mb-2 fw-bold">Steel Structure</div>
+            <div class="d-inline-block">
+              <div class="items">Tower</div>
+              <div class="items">Warehouse</div>
+              <div class="items">Factory</div>
+              <div class="items">Tank and Other Steel Construction</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="space-y">
+      <div class="container">
+        <div class="fs-1 fw-bold text-center text-yellow mb-5">LEGALITY</div>
+        <div class="row gy-5 justify-content-center">
+          <div class="col-12 col-md-8">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item px-0">
+                <div class="row g-0 align-items-center">
+                  <div class="col-6 fw-bold">NAME OF COMPANY</div>
+                  <div class="col-6 text-end">PT. EAGAN WARSANA ENERGI</div>
+                </div>
+              </li>
+
+              <li class="list-group-item px-0">
+                <div class="row g-0 align-items-center">
+                  <div class="col-6 fw-bold">ADDRESS</div>
+                  <div class="col-6 text-end">
+                    <p class="m-0 p-0">
+                      Komplek Grand Sungkono 2 Blok D-17 Jl.Mayjend Sungkono
+                      Surabaya
+                    </p>
+                    <p class="m-0 p-0">TELP. 031-510905.566 2786</p>
+                    <p class="m-0 p-0">FAX. 031-56666464</p>
+                    <p class="m-0 p-0">EMAIL. admin@eagan.co.id</p>
+                    <p class="m-0 p-0">WEBSITE. www.eagan.co.id</p>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item px-0">
+                <div class="row g-0 align-items-center">
+                  <div class="col-6 fw-bold">MANAGING DIRECTOR</div>
+                  <div class="col-6 text-end">
+                    Iffan Mathawarsana Wijaya Kusuma.ST
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item px-0">
+                <div class="row g-0 align-items-center">
+                  <div class="col-6 fw-bold">BUSINESS DEV. DIRECTORE</div>
+                  <div class="col-6 text-end">Ahmad Andi S</div>
+                </div>
+              </li>
+              <li class="list-group-item px-0">
+                <div class="row g-0 align-items-center">
+                  <div class="col-6 fw-bold">COMMERCIAL & OPR. DIRECTOR</div>
+                  <div class="col-6 text-end">Kaiser Pambudi</div>
+                </div>
+              </li>
+              <li class="list-group-item px-0">
+                <div class="row g-0 align-items-center">
+                  <div class="col-6 fw-bold">AKTE PENDIRIAN</div>
+                  <div class="col-6 text-end">
+                    <p class="m-0">Akta Notaris Nomor : 08</p>
+                    <p class="m-0">Tanggal : 22-03-2011</p>
+                    <p class="m-0">
+                      Notaris Sidoarjo : Yani Haryani, SH, M. Kn
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item px-0">
+                <div class="row g-0 align-items-center">
+                  <div class="col-6 fw-bold">PENGESAHAN MENHUM</div>
+                  <div class="col-6 text-end">
+                    AHU-0019128.AH.01.02.TAHUN 2016
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item px-0">
+                <div class="row g-0 align-items-center">
+                  <div class="col-6 fw-bold">SIUP</div>
+                  <div class="col-6 text-end">
+                    503 / 3352.A / 436.7.17 / 2017
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item px-0">
+                <div class="row g-0 align-items-center">
+                  <div class="col-6 fw-bold">SKT</div>
+                  <div class="col-6 text-end">
+                    S-7042KT / WPJ.11 / KP.0403 / 2016
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item px-0">
+                <div class="row g-0 align-items-center">
+                  <div class="col-6 fw-bold">SPPKP</div>
+                  <div class="col-6 text-end">
+                    S-340PKP / WJP.11 / KP.0403 / 2016
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item px-0">
+                <div class="row g-0 align-items-center">
+                  <div class="col-6 fw-bold">SIUJK</div>
+                  <div class="col-6 text-end">188.4 / 181 / 436.7.5 / 2017</div>
+                </div>
+              </li>
+              <li class="list-group-item px-0">
+                <div class="row g-0 align-items-center">
+                  <div class="col-6 fw-bold">SBU BANGUNAN SIPIL 1</div>
+                  <div class="col-6 text-end">0-3578-07-127-1-13-086969</div>
+                </div>
+              </li>
+              <li class="list-group-item px-0">
+                <div class="row g-0 align-items-center">
+                  <div class="col-6 fw-bold">SBU BANGUNAN GEDUNG 1</div>
+                  <div class="col-6 text-end">0-3578-07-127-1-13-086969</div>
+                </div>
+              </li>
+              <li class="list-group-item px-0">
+                <div class="row g-0 align-items-center">
+                  <div class="col-6 fw-bold">TDP</div>
+                  <div class="col-6 text-end">
+                    503 / 3117.B / 436.7.17 / 2017
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item px-0">
+                <div class="row g-0 align-items-center">
+                  <div class="col-6 fw-bold">NPWP</div>
+                  <div class="col-6 text-end">03.105.959.5-643.000</div>
+                </div>
+              </li>
+              <li class="list-group-item px-0">
+                <div class="row g-0 align-items-center">
+                  <div class="col-6 fw-bold">KADIN</div>
+                  <div class="col-6 text-end">
+                    <p class="m-0">No. Anggota 20501-17004616</p>
+                    <p class="m-0">No. Registrasi 170406-010139</p>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item px-0">
+                <div class="row g-0 align-items-center">
+                  <div class="col-6 fw-bold">ISO 9001</div>
+                  <div class="col-6 text-end">QM 1709057</div>
+                </div>
+              </li>
+              <li class="list-group-item px-0">
+                <div class="row g-0 align-items-center">
+                  <div class="col-6 fw-bold">OHSAS</div>
+                  <div class="col-6 text-end">OHS1718047</div>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

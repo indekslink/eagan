@@ -135,6 +135,10 @@
 .yellow {
   background-color: var(--yellow);
 }
+.list-group-item {
+  background-color: transparent;
+  padding: auto 0 !important;
+}
 .hero-content :is(.title, .subtitle, .learn-more) {
   position: relative;
   z-index: 2;
@@ -267,6 +271,7 @@
   width: 10px !important;
   transition: 0.5s ease;
   height: 10px;
+  opacity: 1;
   border-radius: 50%;
   background-color: var(--yellow) !important;
   border: 1px solid black !important;
@@ -275,6 +280,21 @@
   width: 30px !important;
   border-radius: 100px;
 }
+
+section.space-y {
+  padding: 3rem 0;
+  margin: 5rem 0;
+}
+
+#company {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+#lines-business .items {
+  padding: 0.5rem 0;
+}
+
 /* laptop small */
 @media (max-width: 991.98px) {
   .hero-content {
