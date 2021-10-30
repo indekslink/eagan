@@ -15,6 +15,7 @@ window.onscroll = () => {
 
 function toggleMenu() {
   hamburgerMenu.forEach((hmb) => ["show"].map((e) => hmb.classList.toggle(e)));
+  document.body.classList.toggle("overflow-hidden");
   navbar.classList.toggle("show");
 }
 document
