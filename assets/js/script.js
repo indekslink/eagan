@@ -21,3 +21,11 @@ function toggleMenu() {
 document
   .querySelector(".to-top")
   .addEventListener("click", () => window.scrollTo(0, 0));
+
+const filterYear = document.querySelectorAll(".filter-year button");
+filterYear.forEach((f) => {
+  f.addEventListener("click", function () {
+    filterYear.forEach((e) => e.classList.remove("btn-outline-warning"));
+    f.classList.add("btn-outline-warning");
+  });
+});

@@ -1,7 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap");
 @import url(./variables.css);
 * {
   font-family: "Zen Kaku Gothic Antique", sans-serif !important;
+}
+
+html .roboto {
+  font-family: "Roboto Slab", serif !important;
 }
 
 /* navbar */
@@ -310,6 +315,13 @@ section.space-y {
 .to-top.show-navigation {
   bottom: 1rem;
   opacity: 1;
+}
+#project-experience .card {
+  transition: 0.5s ease;
+}
+#project-experience .card:hover {
+  position: relative;
+  box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.5);
 }
 /* laptop small */
 @media (max-width: 991.98px) {
