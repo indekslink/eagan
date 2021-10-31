@@ -134,7 +134,7 @@
   height: 90vh;
 } */
 .yellow {
-  background-color: var(--yellow);
+  background-color: var(--lightyellow);
 }
 .list-group-item {
   background-color: transparent;
@@ -289,11 +289,10 @@ section.space-y {
 
 #company {
   margin-top: 0;
-  padding-top: 0;
 }
 
 #lines-business .items {
-  padding: 0.5rem 0;
+  padding: 0.25rem 0;
 }
 .to-top,
 .navigation-bottom {
