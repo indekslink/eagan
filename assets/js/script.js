@@ -25,7 +25,7 @@ document
 const filterYear = document.querySelectorAll(".filter-year button");
 filterYear.forEach((f) => {
   f.addEventListener("click", function () {
-    filterYear.forEach((e) => e.classList.remove("btn-outline-warning"));
-    f.classList.add("btn-outline-warning");
+    filterYear.forEach((e) => e.classList.remove("btn-warning", "fw-bold"));
+    f.classList.add("btn-warning", "fw-bold");
   });
 });
