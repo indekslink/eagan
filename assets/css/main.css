@@ -32,7 +32,7 @@ html .roboto {
   color: var(--yellow);
   text-shadow: -1px 1px 0 black, 1px 1px 0 black, 1px -1px 0 black,
     -1px -1px 0 black;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
 }
 .my-nav .container {
   display: flex;
@@ -40,6 +40,7 @@ html .roboto {
   align-items: center;
 }
 .my-nav a {
+  display: block;
   text-decoration: none;
 }
 .my-nav ul {
@@ -62,13 +63,11 @@ html .roboto {
 .my-nav ul.child-menu {
   position: absolute;
   transition: 0.5s ease;
-
   opacity: 0;
   pointer-events: none;
   top: 1rem;
 
   z-index: 99999999;
-
   flex-direction: column;
   align-items: flex-start;
   display: flex;
@@ -82,16 +81,19 @@ html .roboto {
 }
 
 .child-menu li {
-  padding: 0.5rem 0;
   width: 100%;
+}
+.child-menu li a {
+  padding: 0.5rem 0;
+
   font-weight: bold;
-  opacity: 0.4;
   white-space: nowrap;
   transition: 0.5s ease;
   border-left: 4px solid transparent;
   border-right: 4px solid transparent;
 }
-.child-menu li:hover {
+.child-menu li a:hover,
+.child-menu li a.active {
   border-left-color: yellow;
   padding-left: 10px;
   opacity: 1;
@@ -157,6 +159,8 @@ html .roboto {
 .hero-content :is(.title, .subtitle) {
   line-height: 1.2;
   margin-bottom: 3rem;
+  text-shadow: -1px 1px 0 var(--light), 1px 1px 0 var(--light),
+    1px -1px 0 var(--light), -1px -1px 0 var(--light);
 }
 .hero-content .title {
   font-size: calc(3vw + 2.5rem);
@@ -330,13 +334,6 @@ section.space-y {
   box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.2);
 }
 
-.filter-year {
-  white-space: nowrap;
-  overflow-x: auto;
-  overflow-y: hidden;
-  width: 90%;
-  margin: 0 auto;
-}
 .my-grid {
   padding: 1rem 0;
   columns: 5;
@@ -380,10 +377,21 @@ section.space-y {
 }
 #legality .my-border {
   /* border: 5px dashed yellow; */
-  padding: 1.5rem;
+  padding: 1rem;
   border-radius: 20px;
 
   margin: 0 1rem;
+}
+#documentation .grid .item {
+  padding: 0.5rem !important;
+}
+#documentation .filter-year {
+  position: sticky;
+  justify-content: center;
+  display: flex;
+  background-color: var(--light);
+  z-index: 2;
+  top: 0;
 }
 /* laptop small */
 @media (max-width: 991.98px) {
@@ -402,7 +410,7 @@ section.space-y {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    filter: opacity(40%);
+    filter: opacity(60%);
   }
 }
 
@@ -422,6 +430,14 @@ section.space-y {
     flex-direction: column;
     overflow: hidden;
     background-image: linear-gradient(45deg, var(--light), white);
+  }
+  .my-nav .value-navbar > * {
+    transition: 1s ease;
+    transition-delay: 0.5s;
+    opacity: 0;
+  }
+  .my-nav .value-navbar.show > * {
+    opacity: 1;
   }
   .my-nav .value-navbar.show {
     width: 100% !important;
