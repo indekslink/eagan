@@ -72,7 +72,7 @@
                 <span>PROJECTS</span>
                 <ul class="child-menu shadow">
                   <li class="list-child-menu">EXPERIENCE</li>
-                  <li class="list-child-menu">PORTFOLIO</li>
+                  <li class="list-child-menu">DOCUMENTATION</li>
                 </ul>
               </li>
               <li class="list-menu"><a href="">CONTACT US</a></li>
@@ -247,7 +247,9 @@
     <section class="space-y yellow" id="lines-business">
       <div class="container">
         <div class="fs-1 fw-bold mb-5 text-center">
-          <span class="roboto">LINES OF BUSINESS</span>
+          <span class="roboto"
+            >LINES OF <span class="text-yellow">BUSINESS</span></span
+          >
         </div>
         <div class="row gy-5 justify-content-center">
           <div class="col-lg-3 col-md-4 col-6">
@@ -298,11 +300,11 @@
       </div>
     </section>
 
-    <section class="space-y">
+    <section class="space-y" id="legality">
       <div class="container">
-        <div class="fs-1 fw-bold roboto text-center mb-5">LEGALITY</div>
         <div class="row gy-5 justify-content-center">
-          <div class="col-12 col-md-8">
+          <div class="col-12 col-md-8 my-border shadow-lg">
+            <div class="fs-1 fw-bold roboto text-center mb-5">LEGALITY</div>
             <ul class="list-group list-group-flush">
               <li class="list-group-item px-0">
                 <div class="row g-0 align-items-center">
@@ -448,10 +450,10 @@
         </div>
       </div>
     </section>
-    <section class="space-y" id="project-experience">
+    <section class="space-y" id="experience">
       <div class="container">
         <div class="fs-1 roboto fw-bold text-center mb-5">
-          PROJECT EXPERIENCE
+          PROJECT <span class="text-yellow">EXPERIENCE</span>
         </div>
         <!-- <div class="filter-year mb-5 p-2">
           <button class="btn-warning fw-bold fs-5 btn">All</button>
@@ -551,12 +553,75 @@
           ><a
             href="./assets/images/project/experience/2.png"
             class="progressive replace"
+            data-bs-toggle="modal"
+            data-bs-target="#owner-2"
           >
             <i class="fas fa-info"></i>
             <img
               src="./assets/images/project/experience/2.png"
               alt="logo owner/client"
-              class="preview" /></a
+              class="preview"
+            />
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="owner-2"
+              tabindex="-1"
+              aria-labelledby="owner-2Label"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered text-dark">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="owner-2Label">
+                      Detail of Project
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item px-0">
+                        <div class="row g-0 align-items-center">
+                          <div class="col-6 fw-bold">Owner/Client</div>
+                          <div class="col-6 text-end">PT. Delta Adiguna</div>
+                        </div>
+                      </li>
+                      <li class="list-group-item px-0">
+                        <div class="row g-0 align-items-center">
+                          <div class="col-6 fw-bold">IDR</div>
+                          <div class="col-6 text-end">7.580.000.000</div>
+                        </div>
+                      </li>
+                      <li class="list-group-item px-0">
+                        <div class="row g-0 align-items-center">
+                          <div class="col-6 fw-bold">Location</div>
+                          <div class="col-6 text-end">Lombok NTB</div>
+                        </div>
+                      </li>
+                      <li class="list-group-item px-0">
+                        <div class="row g-0 align-items-center">
+                          <div class="col-6 fw-bold">Year</div>
+                          <div class="col-6 text-end">2011</div>
+                        </div>
+                      </li>
+                      <li class="list-group-item px-0">
+                        <div class="row g-0 align-items-center">
+                          <div class="col-6 fw-bold">Project</div>
+                          <div class="col-6 text-end">
+                            Pertamina LPG Booting System (SPBE)
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div> </a
           ><a
             href="./assets/images/project/experience/3.png"
             class="progressive replace"
@@ -855,6 +920,14 @@
             </div>
           </div>
         </div> -->
+      </div>
+    </section>
+
+    <section class="space-y" id="documentation">
+      <div class="container">
+        <div class="fs-1 roboto fw-bold text-center mb-5">
+          PROJECT <span class="text-yellow">DOCUMENTATION</span>
+        </div>
       </div>
     </section>
     <script

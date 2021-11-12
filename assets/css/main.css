@@ -28,7 +28,12 @@ html .roboto {
 .navbar :is(.nav-link, .dropdown-item).active {
   font-weight: bold;
 } */
-
+.text-yellow {
+  color: var(--yellow);
+  text-shadow: -1px 1px 0 black, 1px 1px 0 black, 1px -1px 0 black,
+    -1px -1px 0 black;
+  letter-spacing: 2px;
+}
 .my-nav .container {
   display: flex;
   justify-content: space-between;
@@ -373,7 +378,13 @@ section.space-y {
 .my-grid img {
   width: 100%;
 }
+#legality .my-border {
+  /* border: 5px dashed yellow; */
+  padding: 1.5rem;
+  border-radius: 20px;
 
+  margin: 0 1rem;
+}
 /* laptop small */
 @media (max-width: 991.98px) {
   .hero-content {
@@ -397,6 +408,9 @@ section.space-y {
 
 /* tablet */
 @media (max-width: 767.98px) {
+  .my-grid a svg {
+    opacity: 1;
+  }
   .my-nav .value-navbar {
     transition: 0.5s ease;
     position: fixed;
