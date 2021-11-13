@@ -51,24 +51,32 @@ $(document).ready(function () {
     return false;
   });
 
-  const navLink = Array.from(document.querySelectorAll(".my-nav .menus a"));
+  const navLink = Array.from(
+    document.querySelectorAll(
+      ".my-nav .menus li:not(.has-child,.list-child-menu) a"
+    )
+  );
   const linkHasChild = Array.from(
     document.querySelectorAll(".my-nav .menus .has-child span")
   );
-
-  [...navLink, ...linkHasChild].forEach((menu) => {
-    // console.log(menu);
-  });
-  const sectionMenu = document.querySelectorAll(".section-menu");
+  const menuActiveOnScroll = [...navLink, ...linkHasChild];
+  // console.log(menuActiveOnScroll);
+  // const sectionMenu = document.querySelectorAll(".section-menu");
 
   function activeMenu(scr) {
-    const about = ["#summary", "#mission", "#vision", "#lines-of-business"];
-    sectionMenu.forEach((section) => {
+    menuActiveOnScroll.forEach((menu) => {
+      let section = document.querySelector(
+        `#${menu.getAttribute("data-section")}`
+      );
+
       let sectionTop = section.offsetTop;
       let sectionHeight = sectionTop + section.offsetHeight;
-      let idSection = section.getAttribute("id");
-      if (scr > sectionTop && scr < sectionHeight) {
-        console.log(idSection);
+
+      menu.classList.remove("active");
+      if (scr > sectionTop - 300 && scr < sectionHeight - 200) {
+        if (menu.getAttribute("data-section") == section.getAttribute("id")) {
+          menu.classList.add("active");
+        }
       }
     });
   }

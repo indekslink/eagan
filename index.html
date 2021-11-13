@@ -47,7 +47,7 @@
     >
       <div class="my-nav">
         <div class="container">
-          <a href="#home" class="logo">
+          <a data-href="home" class="logo">
             <img
               src="./assets/images/logo.png"
               alt="logo"
@@ -60,35 +60,41 @@
 
           <div class="value-navbar">
             <ul class="menus">
-              <li class="list-menu"><a class="#home">HOME</a></li>
+              <li class="list-menu">
+                <a data-section="home" class="active">HOME</a>
+              </li>
               <li class="has-child list-menu">
-                <span>ABOUT</span>
+                <span data-section="about">ABOUT</span>
                 <ul class="child-menu shadow">
                   <li class="list-child-menu">
-                    <a href="#summary">SUMMARY</a>
-                  </li>
-                  <li class="list-child-menu"><a href="#vision">VISION</a></li>
-                  <li class="list-child-menu">
-                    <a href="#mission">MISSION</a>
+                    <a data-section="summary">SUMMARY</a>
                   </li>
                   <li class="list-child-menu">
-                    <a href="#lines-of-business">LINES OF BUSINESS</a>
+                    <a data-section="vision">VISION</a>
+                  </li>
+                  <li class="list-child-menu">
+                    <a data-section="mission">MISSION</a>
+                  </li>
+                  <li class="list-child-menu">
+                    <a data-section="lines-of-business">LINES OF BUSINESS</a>
                   </li>
                 </ul>
               </li>
-              <li class="list-menu"><a href="#legality">LEGALITY</a></li>
+              <li class="list-menu"><a data-section="legality">LEGALITY</a></li>
               <li class="has-child list-menu">
-                <span>PROJECTS</span>
+                <span data-section="projects">PROJECTS</span>
                 <ul class="child-menu shadow">
                   <li class="list-child-menu">
-                    <a href="#experience">EXPERIENCE</a>
+                    <a data-section="experience">EXPERIENCE</a>
                   </li>
                   <li class="list-child-menu">
-                    <a href="#documentation">DOCUMENTATION</a>
+                    <a data-section="documentation">DOCUMENTATION</a>
                   </li>
                 </ul>
               </li>
-              <li class="list-menu"><a href="#contact-us">CONTACT US</a></li>
+              <li class="list-menu">
+                <a data-section="contact-us">CONTACT US</a>
+              </li>
             </ul>
 
             <div class="d-flex ms-lg-5 ms-md-3 ms-0 mt-md-0 mt-5">
@@ -141,180 +147,184 @@
         </div>
       </div>
     </div>
-
-    <section class="space-y section-menu" id="about">
-      <div class="container">
-        <div
-          id="carouselExampleIndicators"
-          class="carousel slide"
-          data-bs-ride="carousel"
-          data-bs-interval="10000"
-        >
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="row justify-content-center text-center">
-                <div class="col-md-8 col-12">
-                  <img
-                    class="img-fluid"
-                    src="./assets/images/summary-1.png"
-                    alt="summary-image"
-                  />
-                </div>
-                <div class="col-md-8 col-12">
-                  <div class="title display-4 mb-4">
-                    <span class="fw-bold">Summary</span>
-                  </div>
-                  <div class="description lh-md">
-                    PT. Eagan Warsana Energi, EAGAN, is a growing medium size
-                    Engineering Procurement Construction (EPC) company which is
-                    specializing in civil engineering, platform work, pipeline
-                    system, steel structure and electrical services. Establised
-                    on March 2011, EAGAN has already proven capable of playing a
-                    sound role in civil, mechanical and steel structures
-                    projects with all project performed in excellent condition
-                    thoughout Indonesia
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row justify-content-center text-center">
-                <div class="col-md-8 col-12">
-                  <img
-                    class="img-fluid"
-                    src="./assets/images/visi.png"
-                    alt="vision-image"
-                  />
-                </div>
-                <div class="col-md-8 col-12">
-                  <div class="title display-4 mb-4">
-                    <span class="fw-bold">Vision</span>
-                  </div>
-                  <div class="description lh-md">
-                    Our aim is ultimately become a trustworthy and an
-                    excellent-leading Engineering Procurement Construction (EPC)
-                    company specializing in civil engineer, mechanical
-                    electrical and steel structure work with the purspose of
-                    giving a customer-statisfaction service to all stakeholders
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row justify-content-center text-center">
-                <div class="col-md-8 col-12">
-                  <img
-                    class="img-fluid"
-                    src="./assets/images/misi.png"
-                    alt="mission-image"
-                  />
-                </div>
-                <div class="col-md-8 col-12">
-                  <div class="title display-4 mb-4">
-                    <span class="fw-bold">Mission</span>
-                  </div>
-                  <div class="description lh-md text-start">
-                    <ul>
-                      <li class="my-2">
-                        Utilizing a moderate project management support system
-                        to ensure our commitment to the clients in term of
-                        budget and schedule
-                      </li>
-                      <li class="my-2">
-                        Operating a tight company policy and continuous
-                        improvement in Quality and Safety
-                      </li>
-                      <li class="my-2">
-                        Developing an excellent communication system along with
-                        the responsible solution to our strategic partners and
-                        clients
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="space-y section-menu yellow" id="lines-of-business">
-      <div class="container">
-        <div class="display-4 fw-bold mb-5 text-center">
-          <span class=""
-            >Lines of <span class="text-yellow">Business</span></span
+    <div id="about">
+      <section class="space-y section-menu">
+        <div class="container">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+            data-bs-interval="10000"
           >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row justify-content-center text-center">
+                  <div class="col-md-8 col-12">
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/summary-1.png"
+                      alt="summary-image"
+                    />
+                  </div>
+                  <div class="col-md-8 col-12">
+                    <div class="title display-4 mb-4">
+                      <span class="fw-bold">Summary</span>
+                    </div>
+                    <div class="description lh-md">
+                      PT. Eagan Warsana Energi, EAGAN, is a growing medium size
+                      Engineering Procurement Construction (EPC) company which
+                      is specializing in civil engineering, platform work,
+                      pipeline system, steel structure and electrical services.
+                      Establised on March 2011, EAGAN has already proven capable
+                      of playing a sound role in civil, mechanical and steel
+                      structures projects with all project performed in
+                      excellent condition thoughout Indonesia
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row justify-content-center text-center">
+                  <div class="col-md-8 col-12">
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/visi.png"
+                      alt="vision-image"
+                    />
+                  </div>
+                  <div class="col-md-8 col-12">
+                    <div class="title display-4 mb-4">
+                      <span class="fw-bold">Vision</span>
+                    </div>
+                    <div class="description lh-md">
+                      Our aim is ultimately become a trustworthy and an
+                      excellent-leading Engineering Procurement Construction
+                      (EPC) company specializing in civil engineer, mechanical
+                      electrical and steel structure work with the purspose of
+                      giving a customer-statisfaction service to all
+                      stakeholders
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row justify-content-center text-center">
+                  <div class="col-md-8 col-12">
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/misi.png"
+                      alt="mission-image"
+                    />
+                  </div>
+                  <div class="col-md-8 col-12">
+                    <div class="title display-4 mb-4">
+                      <span class="fw-bold">Mission</span>
+                    </div>
+                    <div class="description lh-md text-start">
+                      <ul>
+                        <li class="my-2">
+                          Utilizing a moderate project management support system
+                          to ensure our commitment to the clients in term of
+                          budget and schedule
+                        </li>
+                        <li class="my-2">
+                          Operating a tight company policy and continuous
+                          improvement in Quality and Safety
+                        </li>
+                        <li class="my-2">
+                          Developing an excellent communication system along
+                          with the responsible solution to our strategic
+                          partners and clients
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="row gy-5 justify-content-center">
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="fs-4 mb-2 fw-bold text-uppercase">Civil</div>
-            <div class="d-inline-block">
-              <div class="items">Cut and Fill</div>
-              <div class="items">Excavation</div>
-              <div class="items">Foundation</div>
-              <div class="items">Civil Work</div>
-              <div class="items">Pilling</div>
-              <div class="items">Berth</div>
-              <div class="items">Building and Others</div>
-            </div>
+      </section>
+      <section class="space-y section-menu yellow" id="lines-of-business">
+        <div class="container">
+          <div class="display-4 fw-bold mb-5 text-center">
+            <span class=""
+              >Lines of <span class="text-yellow">Business</span></span
+            >
           </div>
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="fs-4 mb-2 fw-bold text-uppercase">Power Plant</div>
-            <div class="d-inline-block">
-              <div class="items">Steel Structure</div>
-              <div class="items">Storage Sytem</div>
-              <div class="items">Pipeline</div>
-              <div class="items">Conveying Sytem</div>
-              <div class="items">Boiler</div>
-              <div class="items">Water Treatment Plant</div>
-              <div class="items">Ducting</div>
-              <div class="items">Refractory Sytem and Other</div>
+          <div class="row gy-5 justify-content-center">
+            <div class="col-lg-3 col-md-4 col-6">
+              <div class="fs-4 mb-2 fw-bold text-uppercase">Civil</div>
+              <div class="d-inline-block">
+                <div class="items">Cut and Fill</div>
+                <div class="items">Excavation</div>
+                <div class="items">Foundation</div>
+                <div class="items">Civil Work</div>
+                <div class="items">Pilling</div>
+                <div class="items">Berth</div>
+                <div class="items">Building and Others</div>
+              </div>
             </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="fs-4 mb-2 fw-bold text-uppercase">
-              Oil and Gas Service
+            <div class="col-lg-3 col-md-4 col-6">
+              <div class="fs-4 mb-2 fw-bold text-uppercase">Power Plant</div>
+              <div class="d-inline-block">
+                <div class="items">Steel Structure</div>
+                <div class="items">Storage Sytem</div>
+                <div class="items">Pipeline</div>
+                <div class="items">Conveying Sytem</div>
+                <div class="items">Boiler</div>
+                <div class="items">Water Treatment Plant</div>
+                <div class="items">Ducting</div>
+                <div class="items">Refractory Sytem and Other</div>
+              </div>
             </div>
-            <div class="d-inline-block">
-              <div class="items">Liquid and Gas Storage System</div>
-              <div class="items">Transport System</div>
-              <div class="items">Pipeline System</div>
+            <div class="col-lg-3 col-md-4 col-6">
+              <div class="fs-4 mb-2 fw-bold text-uppercase">
+                Oil and Gas Service
+              </div>
+              <div class="d-inline-block">
+                <div class="items">Liquid and Gas Storage System</div>
+                <div class="items">Transport System</div>
+                <div class="items">Pipeline System</div>
+              </div>
             </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="fs-4 mb-2 fw-bold text-uppercase">Steel Structure</div>
-            <div class="d-inline-block">
-              <div class="items">Tower</div>
-              <div class="items">Warehouse</div>
-              <div class="items">Factory</div>
-              <div class="items">Tank and Other Steel Construction</div>
+            <div class="col-lg-3 col-md-4 col-6">
+              <div class="fs-4 mb-2 fw-bold text-uppercase">
+                Steel Structure
+              </div>
+              <div class="d-inline-block">
+                <div class="items">Tower</div>
+                <div class="items">Warehouse</div>
+                <div class="items">Factory</div>
+                <div class="items">Tank and Other Steel Construction</div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <section class="space-y section-menu" id="legality">
       <div class="container">
@@ -466,810 +476,816 @@
         </div>
       </div>
     </section>
-    <section class="space-y section-menu" id="experience">
-      <div class="container">
+    <div id="projects">
+      <section class="space-y section-menu" id="experience">
+        <div class="container">
+          <div class="display-4 fw-bold text-center mb-5">
+            Project <span class="text-yellow">Experience</span>
+          </div>
+
+          <div class="my-grid mt-5">
+            <a
+              href="./assets/images/project/experience/1.png"
+              class="progressive replace"
+              data-bs-toggle="modal"
+              data-bs-target="#owner-1"
+            >
+              <i class="fas fa-info"></i>
+              <img
+                src="./assets/images/project/experience/1.png"
+                alt="logo owner/client"
+                class="preview"
+              />
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="owner-1"
+                tabindex="-1"
+                aria-labelledby="owner-1Label"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered text-dark">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="owner-1Label">
+                        Detail of Project
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item px-0">
+                          <div class="row g-0 align-items-center">
+                            <div class="col-6 fw-bold">Owner/Client</div>
+                            <div class="col-6 text-end">
+                              PT. Bumitama Gunajaya Agro
+                            </div>
+                          </div>
+                        </li>
+                        <li class="list-group-item px-0">
+                          <div class="row g-0 align-items-center">
+                            <div class="col-6 fw-bold">IDR</div>
+                            <div class="col-6 text-end">4.421.590.000</div>
+                          </div>
+                        </li>
+                        <li class="list-group-item px-0">
+                          <div class="row g-0 align-items-center">
+                            <div class="col-6 fw-bold">Location</div>
+                            <div class="col-6 text-end">
+                              Ketapang - Kalimantan Barat
+                            </div>
+                          </div>
+                        </li>
+                        <li class="list-group-item px-0">
+                          <div class="row g-0 align-items-center">
+                            <div class="col-6 fw-bold">Year</div>
+                            <div class="col-6 text-end">2019</div>
+                          </div>
+                        </li>
+                        <li class="list-group-item px-0">
+                          <div class="row g-0 align-items-center">
+                            <div class="col-6 fw-bold">Project</div>
+                            <div class="col-6 text-end">
+                              Pekerjaan Pembangunan Power House, Proyek Dermaga
+                              Kijing
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div> </a
+            ><a
+              href="./assets/images/project/experience/2.png"
+              class="progressive replace"
+              data-bs-toggle="modal"
+              data-bs-target="#owner-2"
+            >
+              <i class="fas fa-info"></i>
+              <img
+                src="./assets/images/project/experience/2.png"
+                alt="logo owner/client"
+                class="preview"
+              />
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="owner-2"
+                tabindex="-1"
+                aria-labelledby="owner-2Label"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered text-dark">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="owner-2Label">
+                        Detail of Project
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item px-0">
+                          <div class="row g-0 align-items-center">
+                            <div class="col-6 fw-bold">Owner/Client</div>
+                            <div class="col-6 text-end">PT. Delta Adiguna</div>
+                          </div>
+                        </li>
+                        <li class="list-group-item px-0">
+                          <div class="row g-0 align-items-center">
+                            <div class="col-6 fw-bold">IDR</div>
+                            <div class="col-6 text-end">7.580.000.000</div>
+                          </div>
+                        </li>
+                        <li class="list-group-item px-0">
+                          <div class="row g-0 align-items-center">
+                            <div class="col-6 fw-bold">Location</div>
+                            <div class="col-6 text-end">Lombok NTB</div>
+                          </div>
+                        </li>
+                        <li class="list-group-item px-0">
+                          <div class="row g-0 align-items-center">
+                            <div class="col-6 fw-bold">Year</div>
+                            <div class="col-6 text-end">2011</div>
+                          </div>
+                        </li>
+                        <li class="list-group-item px-0">
+                          <div class="row g-0 align-items-center">
+                            <div class="col-6 fw-bold">Project</div>
+                            <div class="col-6 text-end">
+                              Pertamina LPG Booting System (SPBE)
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div> </a
+            ><a
+              href="./assets/images/project/experience/3.png"
+              class="progressive replace"
+            >
+              <i class="fas fa-info"></i>
+              <img
+                src="./assets/images/project/experience/3.png"
+                alt="logo owner/client"
+                class="preview" /></a
+            ><a
+              href="./assets/images/project/experience/4.png"
+              class="progressive replace"
+            >
+              <i class="fas fa-info"></i>
+              <img
+                src="./assets/images/project/experience/4.png"
+                alt="logo owner/client"
+                class="preview" /></a
+            ><a
+              href="./assets/images/project/experience/5.png"
+              class="progressive replace"
+            >
+              <i class="fas fa-info"></i>
+              <img
+                src="./assets/images/project/experience/5.png"
+                alt="logo owner/client"
+                class="preview" /></a
+            ><a
+              href="./assets/images/project/experience/6.png"
+              class="progressive replace"
+            >
+              <i class="fas fa-info"></i>
+              <img
+                src="./assets/images/project/experience/6.png"
+                alt="logo owner/client"
+                class="preview" /></a
+            ><a
+              href="./assets/images/project/experience/7.png"
+              class="progressive replace"
+            >
+              <i class="fas fa-info"></i>
+              <img
+                src="./assets/images/project/experience/7.png"
+                alt="logo owner/client"
+                class="preview" /></a
+            ><a
+              href="./assets/images/project/experience/8.png"
+              class="progressive replace"
+            >
+              <i class="fas fa-info"></i>
+              <img
+                src="./assets/images/project/experience/8.png"
+                alt="logo owner/client"
+                class="preview" /></a
+            ><a
+              href="./assets/images/project/experience/9.png"
+              class="progressive replace"
+            >
+              <i class="fas fa-info"></i>
+              <img
+                src="./assets/images/project/experience/9.png"
+                alt="logo owner/client"
+                class="preview" /></a
+            ><a
+              href="./assets/images/project/experience/10.png"
+              class="progressive replace"
+            >
+              <i class="fas fa-info"></i>
+              <img
+                src="./assets/images/project/experience/10.png"
+                alt="logo owner/client"
+                class="preview" /></a
+            ><a
+              href="./assets/images/project/experience/11.png"
+              class="progressive replace"
+            >
+              <i class="fas fa-info"></i>
+              <img
+                src="./assets/images/project/experience/11.png"
+                alt="logo owner/client"
+                class="preview" /></a
+            ><a
+              href="./assets/images/project/experience/12.png"
+              class="progressive replace"
+            >
+              <i class="fas fa-info"></i>
+              <img
+                src="./assets/images/project/experience/12.png"
+                alt="logo owner/client"
+                class="preview" /></a
+            ><a
+              href="./assets/images/project/experience/13.png"
+              class="progressive replace"
+            >
+              <i class="fas fa-info"></i>
+              <img
+                src="./assets/images/project/experience/13.png"
+                alt="logo owner/client"
+                class="preview" /></a
+            ><a
+              href="./assets/images/project/experience/14.png"
+              class="progressive replace"
+            >
+              <i class="fas fa-info"></i>
+              <img
+                src="./assets/images/project/experience/14.png"
+                alt="logo owner/client"
+                class="preview" /></a
+            ><a
+              href="./assets/images/project/experience/15.png"
+              class="progressive replace"
+            >
+              <i class="fas fa-info"></i>
+              <img
+                src="./assets/images/project/experience/15.png"
+                alt="logo owner/client"
+                class="preview"
+            /></a>
+          </div>
+          <!-- <div class="row g-4 align-items-end text-center">
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="card bg-transparent border-0">
+            <div class="image-card">
+              <img
+                class="w-100"
+                src="./assets/images/project/experience/logo-modern-widya.png"
+                alt="modern-widya-tehnical"
+              />
+            </div>
+            <div class="px-2 py-3">
+              <div class="fs-4 fw-bold lh-sm">PT. Modern Widya Tehnical</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="card bg-transparent border-0">
+            <div class="image-card">
+              <img
+                class="w-100"
+                src="./assets/images/project/experience/pln.png"
+                alt="modern-widya-tehnical"
+              />
+            </div>
+            <div class="px-2 py-3">
+              <div class="fs-4 fw-bold lh-sm">
+                PLN Consortium of Wasa Mitra Twink Indonesia Ciria Putra
+                Sinergy
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="card bg-transparent border-0">
+            <div class="image-card">
+              <img
+                class="w-100"
+                src="./assets/images/project/experience/deladiguna.png"
+                alt="Logo Owner/Client"
+              />
+            </div>
+            <div class="px-2 py-3">
+              <div class="fs-4 fw-bold lh-sm">PT. Delta Adi Guna</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="card bg-transparent border-0">
+            <div class="image-card">
+              <img
+                class="w-100"
+                src="./assets/images/project/experience/kencana.png"
+                alt="Logo Owner/Client"
+              />
+            </div>
+            <div class="px-2 py-3">
+              <div class="fs-4 fw-bold lh-sm">PT. Alam Kencana Mas</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="card bg-transparent border-0">
+            <div class="image-card">
+              <img
+                class="w-100"
+                src="./assets/images/project/experience/waskita.png"
+                alt="Logo Owner/Client"
+              />
+            </div>
+            <div class="px-2 py-3">
+              <div class="fs-4 fw-bold lh-sm">PT. Waskita Karya</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="card bg-transparent border-0">
+            <div class="image-card">
+              <img
+                class="w-100"
+                src="./assets/images/project/experience/provaceh.png"
+                alt="Logo Owner/Client"
+              />
+            </div>
+            <div class="px-2 py-3">
+              <div class="fs-4 fw-bold lh-sm">Pemerintah Provinsi Aceh</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="card bg-transparent border-0">
+            <div class="image-card">
+              <img
+                class="w-100"
+                src="./assets/images/project/experience/surya-dumai.png"
+                alt="Logo Owner/Client"
+              />
+            </div>
+            <div class="px-2 py-3">
+              <div class="fs-4 fw-bold lh-sm">PT. Surya Dumai</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="card bg-transparent border-0">
+            <div class="image-card">
+              <img
+                class="w-100"
+                src="./assets/images/project/experience/pg.png"
+                alt="Logo Owner/Client"
+              />
+            </div>
+            <div class="px-2 py-3">
+              <div class="fs-4 fw-bold lh-sm">PT. Petrokimia Gresik</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="card bg-transparent border-0">
+            <div class="image-card">
+              <img
+                class="w-100"
+                src="./assets/images/project/experience/polowijo.png"
+                alt="Logo Owner/Client"
+              />
+            </div>
+            <div class="px-2 py-3">
+              <div class="fs-4 fw-bold lh-sm">PT. Polowijo Gosari</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="card bg-transparent border-0">
+            <div class="image-card">
+              <img
+                class="w-100"
+                src="./assets/images/project/experience/jasamarga.png"
+                alt="Logo Owner/Client"
+              />
+            </div>
+            <div class="px-2 py-3">
+              <div class="fs-4 fw-bold lh-sm">PT. Jasa Marga Properti</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="card bg-transparent border-0">
+            <div class="image-card">
+              <img
+                class="w-100"
+                src="./assets/images/project/experience/meta.png"
+                alt="Logo Owner/Client"
+              />
+            </div>
+            <div class="px-2 py-3">
+              <div class="fs-4 fw-bold lh-sm">
+                PT. Meta Adhya Tirta Umbulan
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="card bg-transparent border-0">
+            <div class="image-card">
+              <img
+                class="w-100"
+                src="./assets/images/project/experience/bumitama.png"
+                alt="Logo Owner/Client"
+              />
+            </div>
+            <div class="px-2 py-3">
+              <div class="fs-4 fw-bold lh-sm">PT. Bumitama Gunajaya Agro</div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+        </div>
+      </section>
+      <section class="space-y section-menu" id="documentation">
         <div class="display-4 fw-bold text-center mb-5">
-          Project <span class="text-yellow">Experience</span>
+          Project <span class="text-yellow">Documentation</span>
         </div>
-
-        <div class="my-grid mt-5">
-          <a
-            href="./assets/images/project/experience/1.png"
-            class="progressive replace"
-            data-bs-toggle="modal"
-            data-bs-target="#owner-1"
+        <div class="filter-year mt-5 p-2">
+          <button
+            class="btn-warning fw-bold fs-5 btn"
+            id="btn1"
+            data-filter="*"
           >
-            <i class="fas fa-info"></i>
-            <img
-              src="./assets/images/project/experience/1.png"
-              alt="logo owner/client"
-              class="preview"
-            />
-            <!-- Modal -->
-            <div
-              class="modal fade"
-              id="owner-1"
-              tabindex="-1"
-              aria-labelledby="owner-1Label"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-centered text-dark">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="owner-1Label">
-                      Detail of Project
-                    </h5>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="modal-body">
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item px-0">
-                        <div class="row g-0 align-items-center">
-                          <div class="col-6 fw-bold">Owner/Client</div>
-                          <div class="col-6 text-end">
-                            PT. Bumitama Gunajaya Agro
-                          </div>
-                        </div>
-                      </li>
-                      <li class="list-group-item px-0">
-                        <div class="row g-0 align-items-center">
-                          <div class="col-6 fw-bold">IDR</div>
-                          <div class="col-6 text-end">4.421.590.000</div>
-                        </div>
-                      </li>
-                      <li class="list-group-item px-0">
-                        <div class="row g-0 align-items-center">
-                          <div class="col-6 fw-bold">Location</div>
-                          <div class="col-6 text-end">
-                            Ketapang - Kalimantan Barat
-                          </div>
-                        </div>
-                      </li>
-                      <li class="list-group-item px-0">
-                        <div class="row g-0 align-items-center">
-                          <div class="col-6 fw-bold">Year</div>
-                          <div class="col-6 text-end">2019</div>
-                        </div>
-                      </li>
-                      <li class="list-group-item px-0">
-                        <div class="row g-0 align-items-center">
-                          <div class="col-6 fw-bold">Project</div>
-                          <div class="col-6 text-end">
-                            Pekerjaan Pembangunan Power House, Proyek Dermaga
-                            Kijing
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div> </a
-          ><a
-            href="./assets/images/project/experience/2.png"
-            class="progressive replace"
-            data-bs-toggle="modal"
-            data-bs-target="#owner-2"
-          >
-            <i class="fas fa-info"></i>
-            <img
-              src="./assets/images/project/experience/2.png"
-              alt="logo owner/client"
-              class="preview"
-            />
-            <!-- Modal -->
-            <div
-              class="modal fade"
-              id="owner-2"
-              tabindex="-1"
-              aria-labelledby="owner-2Label"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-centered text-dark">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="owner-2Label">
-                      Detail of Project
-                    </h5>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="modal-body">
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item px-0">
-                        <div class="row g-0 align-items-center">
-                          <div class="col-6 fw-bold">Owner/Client</div>
-                          <div class="col-6 text-end">PT. Delta Adiguna</div>
-                        </div>
-                      </li>
-                      <li class="list-group-item px-0">
-                        <div class="row g-0 align-items-center">
-                          <div class="col-6 fw-bold">IDR</div>
-                          <div class="col-6 text-end">7.580.000.000</div>
-                        </div>
-                      </li>
-                      <li class="list-group-item px-0">
-                        <div class="row g-0 align-items-center">
-                          <div class="col-6 fw-bold">Location</div>
-                          <div class="col-6 text-end">Lombok NTB</div>
-                        </div>
-                      </li>
-                      <li class="list-group-item px-0">
-                        <div class="row g-0 align-items-center">
-                          <div class="col-6 fw-bold">Year</div>
-                          <div class="col-6 text-end">2011</div>
-                        </div>
-                      </li>
-                      <li class="list-group-item px-0">
-                        <div class="row g-0 align-items-center">
-                          <div class="col-6 fw-bold">Project</div>
-                          <div class="col-6 text-end">
-                            Pertamina LPG Booting System (SPBE)
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div> </a
-          ><a
-            href="./assets/images/project/experience/3.png"
-            class="progressive replace"
-          >
-            <i class="fas fa-info"></i>
-            <img
-              src="./assets/images/project/experience/3.png"
-              alt="logo owner/client"
-              class="preview" /></a
-          ><a
-            href="./assets/images/project/experience/4.png"
-            class="progressive replace"
-          >
-            <i class="fas fa-info"></i>
-            <img
-              src="./assets/images/project/experience/4.png"
-              alt="logo owner/client"
-              class="preview" /></a
-          ><a
-            href="./assets/images/project/experience/5.png"
-            class="progressive replace"
-          >
-            <i class="fas fa-info"></i>
-            <img
-              src="./assets/images/project/experience/5.png"
-              alt="logo owner/client"
-              class="preview" /></a
-          ><a
-            href="./assets/images/project/experience/6.png"
-            class="progressive replace"
-          >
-            <i class="fas fa-info"></i>
-            <img
-              src="./assets/images/project/experience/6.png"
-              alt="logo owner/client"
-              class="preview" /></a
-          ><a
-            href="./assets/images/project/experience/7.png"
-            class="progressive replace"
-          >
-            <i class="fas fa-info"></i>
-            <img
-              src="./assets/images/project/experience/7.png"
-              alt="logo owner/client"
-              class="preview" /></a
-          ><a
-            href="./assets/images/project/experience/8.png"
-            class="progressive replace"
-          >
-            <i class="fas fa-info"></i>
-            <img
-              src="./assets/images/project/experience/8.png"
-              alt="logo owner/client"
-              class="preview" /></a
-          ><a
-            href="./assets/images/project/experience/9.png"
-            class="progressive replace"
-          >
-            <i class="fas fa-info"></i>
-            <img
-              src="./assets/images/project/experience/9.png"
-              alt="logo owner/client"
-              class="preview" /></a
-          ><a
-            href="./assets/images/project/experience/10.png"
-            class="progressive replace"
-          >
-            <i class="fas fa-info"></i>
-            <img
-              src="./assets/images/project/experience/10.png"
-              alt="logo owner/client"
-              class="preview" /></a
-          ><a
-            href="./assets/images/project/experience/11.png"
-            class="progressive replace"
-          >
-            <i class="fas fa-info"></i>
-            <img
-              src="./assets/images/project/experience/11.png"
-              alt="logo owner/client"
-              class="preview" /></a
-          ><a
-            href="./assets/images/project/experience/12.png"
-            class="progressive replace"
-          >
-            <i class="fas fa-info"></i>
-            <img
-              src="./assets/images/project/experience/12.png"
-              alt="logo owner/client"
-              class="preview" /></a
-          ><a
-            href="./assets/images/project/experience/13.png"
-            class="progressive replace"
-          >
-            <i class="fas fa-info"></i>
-            <img
-              src="./assets/images/project/experience/13.png"
-              alt="logo owner/client"
-              class="preview" /></a
-          ><a
-            href="./assets/images/project/experience/14.png"
-            class="progressive replace"
-          >
-            <i class="fas fa-info"></i>
-            <img
-              src="./assets/images/project/experience/14.png"
-              alt="logo owner/client"
-              class="preview" /></a
-          ><a
-            href="./assets/images/project/experience/15.png"
-            class="progressive replace"
-          >
-            <i class="fas fa-info"></i>
-            <img
-              src="./assets/images/project/experience/15.png"
-              alt="logo owner/client"
-              class="preview"
-          /></a>
+            All
+          </button>
+          <button class="btn fs-5" data-filter=".civil-work">Civil Work</button>
+          <button class="btn fs-5" data-filter=".mechanical">Mechanical</button>
         </div>
-        <!-- <div class="row g-4 align-items-end text-center">
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="card bg-transparent border-0">
-              <div class="image-card">
-                <img
-                  class="w-100"
-                  src="./assets/images/project/experience/logo-modern-widya.png"
-                  alt="modern-widya-tehnical"
-                />
-              </div>
-              <div class="px-2 py-3">
-                <div class="fs-4 fw-bold lh-sm">PT. Modern Widya Tehnical</div>
-              </div>
+        <div class="container">
+          <div class="row mt-5 grid">
+            <div class="col-lg-3 col-md-4 col-6 item mechanical">
+              <a
+                href="./assets/images/project/documentation/foto-(30).jpeg"
+                class="progressive replace rounded"
+                ><img
+                  src="./assets/images/project/documentation/foto-(30).jpeg"
+                  alt="documentation"
+                  class="img-fluid preview"
+              /></a>
             </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="card bg-transparent border-0">
-              <div class="image-card">
-                <img
-                  class="w-100"
-                  src="./assets/images/project/experience/pln.png"
-                  alt="modern-widya-tehnical"
-                />
-              </div>
-              <div class="px-2 py-3">
-                <div class="fs-4 fw-bold lh-sm">
-                  PLN Consortium of Wasa Mitra Twink Indonesia Ciria Putra
-                  Sinergy
-                </div>
-              </div>
+            <div class="col-lg-3 col-md-4 col-6 item mechanical">
+              <a
+                href="./assets/images/project/documentation/foto-(31).jpeg"
+                class="progressive replace rounded"
+                ><img
+                  src="./assets/images/project/documentation/foto-(31).jpeg"
+                  alt="documentation"
+                  class="img-fluid preview"
+              /></a>
             </div>
-          </div>
+            <div class="col-lg-3 col-md-4 col-6 item civil-work">
+              <a
+                href="./assets/images/project/documentation/foto-(1).jpeg"
+                class="progressive replace rounded"
+                ><img
+                  src="./assets/images/project/documentation/foto-(1).jpeg"
+                  alt="documentation"
+                  class="img-fluid preview"
+              /></a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 item civil-work">
+              <a
+                href="./assets/images/project/documentation/foto-(2).jpeg"
+                class="progressive replace rounded"
+                ><img
+                  src="./assets/images/project/documentation/foto-(2).jpeg"
+                  alt="documentation"
+                  class="img-fluid preview"
+              /></a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 item mechanical">
+              <a
+                href="./assets/images/project/documentation/foto-(16).jpeg"
+                class="progressive replace rounded"
+                ><img
+                  src="./assets/images/project/documentation/foto-(16).jpeg"
+                  alt="documentation"
+                  class="img-fluid preview"
+              /></a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 item mechanical">
+              <a
+                href="./assets/images/project/documentation/foto-(17).jpeg"
+                class="progressive replace rounded"
+                ><img
+                  src="./assets/images/project/documentation/foto-(17).jpeg"
+                  alt="documentation"
+                  class="img-fluid preview"
+              /></a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 item civil-work">
+              <a
+                href="./assets/images/project/documentation/foto-(3).jpeg"
+                class="progressive replace rounded"
+                ><img
+                  src="./assets/images/project/documentation/foto-(3).jpeg"
+                  alt="documentation"
+                  class="img-fluid preview"
+              /></a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 item civil-work">
+              <a
+                href="./assets/images/project/documentation/foto-(4).jpeg"
+                class="progressive replace rounded"
+                ><img
+                  src="./assets/images/project/documentation/foto-(4).jpeg"
+                  alt="documentation"
+                  class="img-fluid preview"
+              /></a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 item mechanical">
+              <a
+                href="./assets/images/project/documentation/foto-(18).jpeg"
+                class="progressive replace rounded"
+                ><img
+                  src="./assets/images/project/documentation/foto-(18).jpeg"
+                  alt="documentation"
+                  class="img-fluid preview"
+              /></a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 item mechanical">
+              <a
+                href="./assets/images/project/documentation/foto-(19).jpeg"
+                class="progressive replace rounded"
+                ><img
+                  src="./assets/images/project/documentation/foto-(19).jpeg"
+                  alt="documentation"
+                  class="img-fluid preview"
+              /></a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 item civil-work">
+              <a
+                href="./assets/images/project/documentation/foto-(5).jpeg"
+                class="progressive replace rounded"
+                ><img
+                  src="./assets/images/project/documentation/foto-(5).jpeg"
+                  alt="documentation"
+                  class="img-fluid preview"
+              /></a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 item civil-work">
+              <a
+                href="./assets/images/project/documentation/foto-(6).jpeg"
+                class="progressive replace rounded"
+                ><img
+                  src="./assets/images/project/documentation/foto-(6).jpeg"
+                  alt="documentation"
+                  class="img-fluid preview"
+              /></a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 item mechanical">
+              <a
+                href="./assets/images/project/documentation/foto-(20).jpeg"
+                class="progressive replace rounded"
+                ><img
+                  src="./assets/images/project/documentation/foto-(20).jpeg"
+                  alt="documentation"
+                  class="img-fluid preview"
+              /></a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 item mechanical">
+              <a
+                href="./assets/images/project/documentation/foto-(21).jpeg"
+                class="progressive replace rounded"
+                ><img
+                  src="./assets/images/project/documentation/foto-(21).jpeg"
+                  alt="documentation"
+                  class="img-fluid preview"
+              /></a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 item civil-work">
+              <a
+                href="./assets/images/project/documentation/foto-(7).jpeg"
+                class="progressive replace rounded"
+                ><img
+                  src="./assets/images/project/documentation/foto-(7).jpeg"
+                  alt="documentation"
+                  class="img-fluid preview"
+              /></a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 item civil-work">
+              <a
+                href="./assets/images/project/documentation/foto-(8).jpeg"
+                class="progressive replace rounded"
+                ><img
+                  src="./assets/images/project/documentation/foto-(8).jpeg"
+                  alt="documentation"
+                  class="img-fluid preview"
+              /></a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 item mechanical">
+              <a
+                href="./assets/images/project/documentation/foto-(22).jpeg"
+                class="progressive replace rounded"
+                ><img
+                  src="./assets/images/project/documentation/foto-(22).jpeg"
+                  alt="documentation"
+                  class="img-fluid preview"
+              /></a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 item mechanical">
+              <a
+                href="./assets/images/project/documentation/foto-(23).jpeg"
+                class="progressive replace rounded"
+                ><img
+                  src="./assets/images/project/documentation/foto-(23).jpeg"
+                  alt="documentation"
+                  class="img-fluid preview"
+              /></a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 item civil-work">
+              <a
+                href="./assets/images/project/documentation/foto-(9).jpeg"
+                class="progressive replace rounded"
+                ><img
+                  src="./assets/images/project/documentation/foto-(9).jpeg"
+                  alt="documentation"
+                  class="img-fluid preview"
+              /></a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 item civil-work">
+              <a
+                href="./assets/images/project/documentation/foto-(10).jpeg"
+                class="progressive replace rounded"
+                ><img
+                  src="./assets/images/project/documentation/foto-(10).jpeg"
+                  alt="documentation"
+                  class="img-fluid preview"
+              /></a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 item mechanical">
+              <a
+                href="./assets/images/project/documentation/foto-(24).jpeg"
+                class="progressive replace rounded"
+                ><img
+                  src="./assets/images/project/documentation/foto-(24).jpeg"
+                  alt="documentation"
+                  class="img-fluid preview"
+              /></a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 item mechanical">
+              <a
+                href="./assets/images/project/documentation/foto-(25).jpeg"
+                class="progressive replace rounded"
+                ><img
+                  src="./assets/images/project/documentation/foto-(25).jpeg"
+                  alt="documentation"
+                  class="img-fluid preview"
+              /></a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 item civil-work">
+              <a
+                href="./assets/images/project/documentation/foto-(11).jpeg"
+                class="progressive replace rounded"
+                ><img
+                  src="./assets/images/project/documentation/foto-(11).jpeg"
+                  alt="documentation"
+                  class="img-fluid preview"
+              /></a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 item civil-work">
+              <a
+                href="./assets/images/project/documentation/foto-(12).jpeg"
+                class="progressive replace rounded"
+                ><img
+                  src="./assets/images/project/documentation/foto-(12).jpeg"
+                  alt="documentation"
+                  class="img-fluid preview"
+              /></a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 item mechanical">
+              <a
+                href="./assets/images/project/documentation/foto-(26).jpeg"
+                class="progressive replace rounded"
+                ><img
+                  src="./assets/images/project/documentation/foto-(26).jpeg"
+                  alt="documentation"
+                  class="img-fluid preview"
+              /></a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 item mechanical">
+              <a
+                href="./assets/images/project/documentation/foto-(27).jpeg"
+                class="progressive replace rounded"
+                ><img
+                  src="./assets/images/project/documentation/foto-(27).jpeg"
+                  alt="documentation"
+                  class="img-fluid preview"
+              /></a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 item civil-work">
+              <a
+                href="./assets/images/project/documentation/foto-(13).jpeg"
+                class="progressive replace rounded"
+                ><img
+                  src="./assets/images/project/documentation/foto-(13).jpeg"
+                  alt="documentation"
+                  class="img-fluid preview"
+              /></a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 item civil-work">
+              <a
+                href="./assets/images/project/documentation/foto-(14).jpeg"
+                class="progressive replace rounded"
+                ><img
+                  src="./assets/images/project/documentation/foto-(14).jpeg"
+                  alt="documentation"
+                  class="img-fluid preview"
+              /></a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 item mechanical">
+              <a
+                href="./assets/images/project/documentation/foto-(28).jpeg"
+                class="progressive replace rounded"
+                ><img
+                  src="./assets/images/project/documentation/foto-(28).jpeg"
+                  alt="documentation"
+                  class="img-fluid preview"
+              /></a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 item mechanical">
+              <a
+                href="./assets/images/project/documentation/foto-(29).jpeg"
+                class="progressive replace rounded"
+                ><img
+                  src="./assets/images/project/documentation/foto-(29).jpeg"
+                  alt="documentation"
+                  class="img-fluid preview"
+              /></a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 item civil-work">
+              <a
+                href="./assets/images/project/documentation/foto-(15).jpeg"
+                class="progressive replace rounded"
+                ><img
+                  src="./assets/images/project/documentation/foto-(15).jpeg"
+                  alt="documentation"
+                  class="img-fluid preview"
+              /></a>
+            </div>
 
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="card bg-transparent border-0">
-              <div class="image-card">
-                <img
-                  class="w-100"
-                  src="./assets/images/project/experience/deladiguna.png"
-                  alt="Logo Owner/Client"
-                />
-              </div>
-              <div class="px-2 py-3">
-                <div class="fs-4 fw-bold lh-sm">PT. Delta Adi Guna</div>
-              </div>
+            <div class="col-lg-3 col-md-4 col-6 item mechanical">
+              <a
+                href="./assets/images/project/documentation/foto-(32).jpeg"
+                class="progressive replace rounded"
+                ><img
+                  src="./assets/images/project/documentation/foto-(32).jpeg"
+                  alt="documentation"
+                  class="img-fluid preview"
+              /></a>
             </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="card bg-transparent border-0">
-              <div class="image-card">
-                <img
-                  class="w-100"
-                  src="./assets/images/project/experience/kencana.png"
-                  alt="Logo Owner/Client"
-                />
-              </div>
-              <div class="px-2 py-3">
-                <div class="fs-4 fw-bold lh-sm">PT. Alam Kencana Mas</div>
-              </div>
+            <div class="col-lg-3 col-md-4 col-6 item mechanical">
+              <a
+                href="./assets/images/project/documentation/foto-(33).jpeg"
+                class="progressive replace rounded"
+                ><img
+                  src="./assets/images/project/documentation/foto-(33).jpeg"
+                  alt="documentation"
+                  class="img-fluid preview"
+              /></a>
             </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="card bg-transparent border-0">
-              <div class="image-card">
-                <img
-                  class="w-100"
-                  src="./assets/images/project/experience/waskita.png"
-                  alt="Logo Owner/Client"
-                />
-              </div>
-              <div class="px-2 py-3">
-                <div class="fs-4 fw-bold lh-sm">PT. Waskita Karya</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="card bg-transparent border-0">
-              <div class="image-card">
-                <img
-                  class="w-100"
-                  src="./assets/images/project/experience/provaceh.png"
-                  alt="Logo Owner/Client"
-                />
-              </div>
-              <div class="px-2 py-3">
-                <div class="fs-4 fw-bold lh-sm">Pemerintah Provinsi Aceh</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="card bg-transparent border-0">
-              <div class="image-card">
-                <img
-                  class="w-100"
-                  src="./assets/images/project/experience/surya-dumai.png"
-                  alt="Logo Owner/Client"
-                />
-              </div>
-              <div class="px-2 py-3">
-                <div class="fs-4 fw-bold lh-sm">PT. Surya Dumai</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="card bg-transparent border-0">
-              <div class="image-card">
-                <img
-                  class="w-100"
-                  src="./assets/images/project/experience/pg.png"
-                  alt="Logo Owner/Client"
-                />
-              </div>
-              <div class="px-2 py-3">
-                <div class="fs-4 fw-bold lh-sm">PT. Petrokimia Gresik</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="card bg-transparent border-0">
-              <div class="image-card">
-                <img
-                  class="w-100"
-                  src="./assets/images/project/experience/polowijo.png"
-                  alt="Logo Owner/Client"
-                />
-              </div>
-              <div class="px-2 py-3">
-                <div class="fs-4 fw-bold lh-sm">PT. Polowijo Gosari</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="card bg-transparent border-0">
-              <div class="image-card">
-                <img
-                  class="w-100"
-                  src="./assets/images/project/experience/jasamarga.png"
-                  alt="Logo Owner/Client"
-                />
-              </div>
-              <div class="px-2 py-3">
-                <div class="fs-4 fw-bold lh-sm">PT. Jasa Marga Properti</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="card bg-transparent border-0">
-              <div class="image-card">
-                <img
-                  class="w-100"
-                  src="./assets/images/project/experience/meta.png"
-                  alt="Logo Owner/Client"
-                />
-              </div>
-              <div class="px-2 py-3">
-                <div class="fs-4 fw-bold lh-sm">
-                  PT. Meta Adhya Tirta Umbulan
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="card bg-transparent border-0">
-              <div class="image-card">
-                <img
-                  class="w-100"
-                  src="./assets/images/project/experience/bumitama.png"
-                  alt="Logo Owner/Client"
-                />
-              </div>
-              <div class="px-2 py-3">
-                <div class="fs-4 fw-bold lh-sm">PT. Bumitama Gunajaya Agro</div>
-              </div>
-            </div>
-          </div>
-        </div> -->
-      </div>
-    </section>
-
-    <section class="space-y section-menu" id="documentation">
-      <div class="display-4 fw-bold text-center mb-5">
-        Project <span class="text-yellow">Documentation</span>
-      </div>
-      <div class="filter-year mt-5 p-2">
-        <button class="btn-warning fw-bold fs-5 btn" id="btn1" data-filter="*">
-          All
-        </button>
-        <button class="btn fs-5" data-filter=".civil-work">Civil Work</button>
-        <button class="btn fs-5" data-filter=".mechanical">Mechanical</button>
-      </div>
-      <div class="container">
-        <div class="row mt-5 grid">
-          <div class="col-lg-3 col-md-4 col-6 item mechanical">
-            <a
-              href="./assets/images/project/documentation/foto-(30).jpeg"
-              class="progressive replace rounded"
-              ><img
-                src="./assets/images/project/documentation/foto-(30).jpeg"
-                alt="documentation"
-                class="img-fluid preview"
-            /></a>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 item mechanical">
-            <a
-              href="./assets/images/project/documentation/foto-(31).jpeg"
-              class="progressive replace rounded"
-              ><img
-                src="./assets/images/project/documentation/foto-(31).jpeg"
-                alt="documentation"
-                class="img-fluid preview"
-            /></a>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 item civil-work">
-            <a
-              href="./assets/images/project/documentation/foto-(1).jpeg"
-              class="progressive replace rounded"
-              ><img
-                src="./assets/images/project/documentation/foto-(1).jpeg"
-                alt="documentation"
-                class="img-fluid preview"
-            /></a>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 item civil-work">
-            <a
-              href="./assets/images/project/documentation/foto-(2).jpeg"
-              class="progressive replace rounded"
-              ><img
-                src="./assets/images/project/documentation/foto-(2).jpeg"
-                alt="documentation"
-                class="img-fluid preview"
-            /></a>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 item mechanical">
-            <a
-              href="./assets/images/project/documentation/foto-(16).jpeg"
-              class="progressive replace rounded"
-              ><img
-                src="./assets/images/project/documentation/foto-(16).jpeg"
-                alt="documentation"
-                class="img-fluid preview"
-            /></a>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 item mechanical">
-            <a
-              href="./assets/images/project/documentation/foto-(17).jpeg"
-              class="progressive replace rounded"
-              ><img
-                src="./assets/images/project/documentation/foto-(17).jpeg"
-                alt="documentation"
-                class="img-fluid preview"
-            /></a>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 item civil-work">
-            <a
-              href="./assets/images/project/documentation/foto-(3).jpeg"
-              class="progressive replace rounded"
-              ><img
-                src="./assets/images/project/documentation/foto-(3).jpeg"
-                alt="documentation"
-                class="img-fluid preview"
-            /></a>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 item civil-work">
-            <a
-              href="./assets/images/project/documentation/foto-(4).jpeg"
-              class="progressive replace rounded"
-              ><img
-                src="./assets/images/project/documentation/foto-(4).jpeg"
-                alt="documentation"
-                class="img-fluid preview"
-            /></a>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 item mechanical">
-            <a
-              href="./assets/images/project/documentation/foto-(18).jpeg"
-              class="progressive replace rounded"
-              ><img
-                src="./assets/images/project/documentation/foto-(18).jpeg"
-                alt="documentation"
-                class="img-fluid preview"
-            /></a>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 item mechanical">
-            <a
-              href="./assets/images/project/documentation/foto-(19).jpeg"
-              class="progressive replace rounded"
-              ><img
-                src="./assets/images/project/documentation/foto-(19).jpeg"
-                alt="documentation"
-                class="img-fluid preview"
-            /></a>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 item civil-work">
-            <a
-              href="./assets/images/project/documentation/foto-(5).jpeg"
-              class="progressive replace rounded"
-              ><img
-                src="./assets/images/project/documentation/foto-(5).jpeg"
-                alt="documentation"
-                class="img-fluid preview"
-            /></a>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 item civil-work">
-            <a
-              href="./assets/images/project/documentation/foto-(6).jpeg"
-              class="progressive replace rounded"
-              ><img
-                src="./assets/images/project/documentation/foto-(6).jpeg"
-                alt="documentation"
-                class="img-fluid preview"
-            /></a>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 item mechanical">
-            <a
-              href="./assets/images/project/documentation/foto-(20).jpeg"
-              class="progressive replace rounded"
-              ><img
-                src="./assets/images/project/documentation/foto-(20).jpeg"
-                alt="documentation"
-                class="img-fluid preview"
-            /></a>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 item mechanical">
-            <a
-              href="./assets/images/project/documentation/foto-(21).jpeg"
-              class="progressive replace rounded"
-              ><img
-                src="./assets/images/project/documentation/foto-(21).jpeg"
-                alt="documentation"
-                class="img-fluid preview"
-            /></a>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 item civil-work">
-            <a
-              href="./assets/images/project/documentation/foto-(7).jpeg"
-              class="progressive replace rounded"
-              ><img
-                src="./assets/images/project/documentation/foto-(7).jpeg"
-                alt="documentation"
-                class="img-fluid preview"
-            /></a>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 item civil-work">
-            <a
-              href="./assets/images/project/documentation/foto-(8).jpeg"
-              class="progressive replace rounded"
-              ><img
-                src="./assets/images/project/documentation/foto-(8).jpeg"
-                alt="documentation"
-                class="img-fluid preview"
-            /></a>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 item mechanical">
-            <a
-              href="./assets/images/project/documentation/foto-(22).jpeg"
-              class="progressive replace rounded"
-              ><img
-                src="./assets/images/project/documentation/foto-(22).jpeg"
-                alt="documentation"
-                class="img-fluid preview"
-            /></a>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 item mechanical">
-            <a
-              href="./assets/images/project/documentation/foto-(23).jpeg"
-              class="progressive replace rounded"
-              ><img
-                src="./assets/images/project/documentation/foto-(23).jpeg"
-                alt="documentation"
-                class="img-fluid preview"
-            /></a>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 item civil-work">
-            <a
-              href="./assets/images/project/documentation/foto-(9).jpeg"
-              class="progressive replace rounded"
-              ><img
-                src="./assets/images/project/documentation/foto-(9).jpeg"
-                alt="documentation"
-                class="img-fluid preview"
-            /></a>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 item civil-work">
-            <a
-              href="./assets/images/project/documentation/foto-(10).jpeg"
-              class="progressive replace rounded"
-              ><img
-                src="./assets/images/project/documentation/foto-(10).jpeg"
-                alt="documentation"
-                class="img-fluid preview"
-            /></a>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 item mechanical">
-            <a
-              href="./assets/images/project/documentation/foto-(24).jpeg"
-              class="progressive replace rounded"
-              ><img
-                src="./assets/images/project/documentation/foto-(24).jpeg"
-                alt="documentation"
-                class="img-fluid preview"
-            /></a>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 item mechanical">
-            <a
-              href="./assets/images/project/documentation/foto-(25).jpeg"
-              class="progressive replace rounded"
-              ><img
-                src="./assets/images/project/documentation/foto-(25).jpeg"
-                alt="documentation"
-                class="img-fluid preview"
-            /></a>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 item civil-work">
-            <a
-              href="./assets/images/project/documentation/foto-(11).jpeg"
-              class="progressive replace rounded"
-              ><img
-                src="./assets/images/project/documentation/foto-(11).jpeg"
-                alt="documentation"
-                class="img-fluid preview"
-            /></a>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 item civil-work">
-            <a
-              href="./assets/images/project/documentation/foto-(12).jpeg"
-              class="progressive replace rounded"
-              ><img
-                src="./assets/images/project/documentation/foto-(12).jpeg"
-                alt="documentation"
-                class="img-fluid preview"
-            /></a>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 item mechanical">
-            <a
-              href="./assets/images/project/documentation/foto-(26).jpeg"
-              class="progressive replace rounded"
-              ><img
-                src="./assets/images/project/documentation/foto-(26).jpeg"
-                alt="documentation"
-                class="img-fluid preview"
-            /></a>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 item mechanical">
-            <a
-              href="./assets/images/project/documentation/foto-(27).jpeg"
-              class="progressive replace rounded"
-              ><img
-                src="./assets/images/project/documentation/foto-(27).jpeg"
-                alt="documentation"
-                class="img-fluid preview"
-            /></a>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 item civil-work">
-            <a
-              href="./assets/images/project/documentation/foto-(13).jpeg"
-              class="progressive replace rounded"
-              ><img
-                src="./assets/images/project/documentation/foto-(13).jpeg"
-                alt="documentation"
-                class="img-fluid preview"
-            /></a>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 item civil-work">
-            <a
-              href="./assets/images/project/documentation/foto-(14).jpeg"
-              class="progressive replace rounded"
-              ><img
-                src="./assets/images/project/documentation/foto-(14).jpeg"
-                alt="documentation"
-                class="img-fluid preview"
-            /></a>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 item mechanical">
-            <a
-              href="./assets/images/project/documentation/foto-(28).jpeg"
-              class="progressive replace rounded"
-              ><img
-                src="./assets/images/project/documentation/foto-(28).jpeg"
-                alt="documentation"
-                class="img-fluid preview"
-            /></a>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 item mechanical">
-            <a
-              href="./assets/images/project/documentation/foto-(29).jpeg"
-              class="progressive replace rounded"
-              ><img
-                src="./assets/images/project/documentation/foto-(29).jpeg"
-                alt="documentation"
-                class="img-fluid preview"
-            /></a>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 item civil-work">
-            <a
-              href="./assets/images/project/documentation/foto-(15).jpeg"
-              class="progressive replace rounded"
-              ><img
-                src="./assets/images/project/documentation/foto-(15).jpeg"
-                alt="documentation"
-                class="img-fluid preview"
-            /></a>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-6 item mechanical">
-            <a
-              href="./assets/images/project/documentation/foto-(32).jpeg"
-              class="progressive replace rounded"
-              ><img
-                src="./assets/images/project/documentation/foto-(32).jpeg"
-                alt="documentation"
-                class="img-fluid preview"
-            /></a>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 item mechanical">
-            <a
-              href="./assets/images/project/documentation/foto-(33).jpeg"
-              class="progressive replace rounded"
-              ><img
-                src="./assets/images/project/documentation/foto-(33).jpeg"
-                alt="documentation"
-                class="img-fluid preview"
-            /></a>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
+
     <section class="space-y section-menu" id="contact-us">
       <div class="container">
         <div class="display-4 fw-bold text-center mb-5">
