@@ -1,5 +1,5 @@
 :root {
   --yellow: #f1f808;
-  --lightyellow: rgba(239, 247, 8, 0.078);
+  --lightyellow: rgb(239 247 8 / 16%);
   --light: #f8f9fa;
 }

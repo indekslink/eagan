@@ -34,12 +34,12 @@
     <title>Eagan Warsana Energi</title>
   </head>
   <body class="bg-light">
-    <button class="btn to-top shadow-lg mb-md-0 mb-3 btn-warning">
+    <button class="btn to-top shadow-lg btn-warning">
       <i class="fas fa-arrow-up"></i>
     </button>
-    <div class="hamburger-menu navigation-bottom">
+    <!-- <div class="hamburger-menu navigation-bottom">
       <span></span><span></span><span></span>
-    </div>
+    </div> -->
 
     <div
       id="home"
@@ -114,16 +114,8 @@
           </div>
         </div>
       </div>
-      <div class="container h-100">
-        <div
-          class="
-            row
-            h-100
-            align-items-center
-            justify-content-center
-            overflow-hidden
-          "
-        >
+      <div class="container overflow-hidden h-100">
+        <div class="row h-100 align-items-center justify-content-center">
           <div
             class="col-lg-7 text-lg-start text-center tablet-img-hero-content"
           >
@@ -132,7 +124,9 @@
               Persistent to the passion for customers, quality foucs, safety
               environment, personel intergrity, team work and fun
             </div>
-            <button class="btn-warning btn btn-lg mt-2 learn-more shadow-lg">
+            <button
+              class="btn-warning btn btn-lg mt-2 learn-more shadow-sm fw-bold"
+            >
               <span>Learn More</span>
             </button>
           </div>
@@ -154,7 +148,7 @@
           id="carouselExampleIndicators"
           class="carousel slide"
           data-bs-ride="carousel"
-          data-bs-pause="false"
+          data-bs-interval="10000"
         >
           <div class="carousel-indicators">
             <button
@@ -189,8 +183,8 @@
                   />
                 </div>
                 <div class="col-md-8 col-12">
-                  <div class="title fs-1 mb-4">
-                    <span class="fw-bolder roboto">SUMMARY</span>
+                  <div class="title display-4 mb-4">
+                    <span class="fw-bold">Summary</span>
                   </div>
                   <div class="description lh-md">
                     PT. Eagan Warsana Energi, EAGAN, is a growing medium size
@@ -215,8 +209,8 @@
                   />
                 </div>
                 <div class="col-md-8 col-12">
-                  <div class="title fs-1 mb-4">
-                    <span class="fw-bolder roboto">VISION</span>
+                  <div class="title display-4 mb-4">
+                    <span class="fw-bold">Vision</span>
                   </div>
                   <div class="description lh-md">
                     Our aim is ultimately become a trustworthy and an
@@ -238,8 +232,8 @@
                   />
                 </div>
                 <div class="col-md-8 col-12">
-                  <div class="title fs-1 mb-4">
-                    <span class="fw-bolder roboto">MISSION</span>
+                  <div class="title display-4 mb-4">
+                    <span class="fw-bold">Mission</span>
                   </div>
                   <div class="description lh-md text-start">
                     <ul>
@@ -268,9 +262,9 @@
     </section>
     <section class="space-y section-menu yellow" id="lines-of-business">
       <div class="container">
-        <div class="fs-1 fw-bold mb-5 text-center">
-          <span class="roboto"
-            >LINES OF <span class="text-yellow">BUSINESS</span></span
+        <div class="display-4 fw-bold mb-5 text-center">
+          <span class=""
+            >Lines of <span class="text-yellow">Business</span></span
           >
         </div>
         <div class="row gy-5 justify-content-center">
@@ -326,7 +320,7 @@
       <div class="container">
         <div class="row gy-5 justify-content-center">
           <div class="col-11 col-md-8 my-border shadow-lg">
-            <div class="fs-1 fw-bold roboto text-center mb-5">LEGALITY</div>
+            <div class="display-4 fw-bold text-center mb-5">Legality</div>
             <ul class="list-group list-group-flush">
               <li class="list-group-item px-0">
                 <div class="row g-0 align-items-center">
@@ -474,25 +468,9 @@
     </section>
     <section class="space-y section-menu" id="experience">
       <div class="container">
-        <div class="fs-1 roboto fw-bold text-center mb-5">
-          PROJECT <span class="text-yellow">EXPERIENCE</span>
+        <div class="display-4 fw-bold text-center mb-5">
+          Project <span class="text-yellow">Experience</span>
         </div>
-        <!-- <div class="filter-year mb-5 p-2">
-          <button class="btn-warning fw-bold fs-5 btn">All</button>
-          <button class="btn fs-5">2009</button>
-          <button class="btn fs-5">2010</button>
-          <button class="btn fs-5">2011</button>
-          <button class="btn fs-5">2012</button>
-          <button class="btn fs-5">2013</button>
-          <button class="btn fs-5">2014</button>
-          <button class="btn fs-5">2015</button>
-          <button class="btn fs-5">2016</button>
-          <button class="btn fs-5">2017</button>
-          <button class="btn fs-5">2018</button>
-          <button class="btn fs-5">2019</button>
-          <button class="btn fs-5">2020</button>
-          <button class="btn fs-5">2021</button>
-        </div> -->
 
         <div class="my-grid mt-5">
           <a
@@ -946,8 +924,8 @@
     </section>
 
     <section class="space-y section-menu" id="documentation">
-      <div class="fs-1 roboto fw-bold text-center mb-5">
-        PROJECT <span class="text-yellow">DOCUMENTATION</span>
+      <div class="display-4 fw-bold text-center mb-5">
+        Project <span class="text-yellow">Documentation</span>
       </div>
       <div class="filter-year mt-5 p-2">
         <button class="btn-warning fw-bold fs-5 btn" id="btn1" data-filter="*">
@@ -961,337 +939,377 @@
           <div class="col-lg-3 col-md-4 col-6 item mechanical">
             <a
               href="./assets/images/project/documentation/foto-(30).jpeg"
-              class="progressive replace"
+              class="progressive replace rounded"
               ><img
                 src="./assets/images/project/documentation/foto-(30).jpeg"
                 alt="documentation"
-                class="img-fluid preview rounded"
+                class="img-fluid preview"
             /></a>
           </div>
           <div class="col-lg-3 col-md-4 col-6 item mechanical">
             <a
               href="./assets/images/project/documentation/foto-(31).jpeg"
-              class="progressive replace"
+              class="progressive replace rounded"
               ><img
                 src="./assets/images/project/documentation/foto-(31).jpeg"
                 alt="documentation"
-                class="img-fluid preview rounded"
+                class="img-fluid preview"
             /></a>
           </div>
           <div class="col-lg-3 col-md-4 col-6 item civil-work">
             <a
               href="./assets/images/project/documentation/foto-(1).jpeg"
-              class="progressive replace"
+              class="progressive replace rounded"
               ><img
                 src="./assets/images/project/documentation/foto-(1).jpeg"
                 alt="documentation"
-                class="img-fluid preview rounded"
+                class="img-fluid preview"
             /></a>
           </div>
           <div class="col-lg-3 col-md-4 col-6 item civil-work">
             <a
               href="./assets/images/project/documentation/foto-(2).jpeg"
-              class="progressive replace"
+              class="progressive replace rounded"
               ><img
                 src="./assets/images/project/documentation/foto-(2).jpeg"
                 alt="documentation"
-                class="img-fluid preview rounded"
+                class="img-fluid preview"
             /></a>
           </div>
           <div class="col-lg-3 col-md-4 col-6 item mechanical">
             <a
               href="./assets/images/project/documentation/foto-(16).jpeg"
-              class="progressive replace"
+              class="progressive replace rounded"
               ><img
                 src="./assets/images/project/documentation/foto-(16).jpeg"
                 alt="documentation"
-                class="img-fluid preview rounded"
+                class="img-fluid preview"
             /></a>
           </div>
           <div class="col-lg-3 col-md-4 col-6 item mechanical">
             <a
               href="./assets/images/project/documentation/foto-(17).jpeg"
-              class="progressive replace"
+              class="progressive replace rounded"
               ><img
                 src="./assets/images/project/documentation/foto-(17).jpeg"
                 alt="documentation"
-                class="img-fluid preview rounded"
+                class="img-fluid preview"
             /></a>
           </div>
           <div class="col-lg-3 col-md-4 col-6 item civil-work">
             <a
               href="./assets/images/project/documentation/foto-(3).jpeg"
-              class="progressive replace"
+              class="progressive replace rounded"
               ><img
                 src="./assets/images/project/documentation/foto-(3).jpeg"
                 alt="documentation"
-                class="img-fluid preview rounded"
+                class="img-fluid preview"
             /></a>
           </div>
           <div class="col-lg-3 col-md-4 col-6 item civil-work">
             <a
               href="./assets/images/project/documentation/foto-(4).jpeg"
-              class="progressive replace"
+              class="progressive replace rounded"
               ><img
                 src="./assets/images/project/documentation/foto-(4).jpeg"
                 alt="documentation"
-                class="img-fluid preview rounded"
+                class="img-fluid preview"
             /></a>
           </div>
           <div class="col-lg-3 col-md-4 col-6 item mechanical">
             <a
               href="./assets/images/project/documentation/foto-(18).jpeg"
-              class="progressive replace"
+              class="progressive replace rounded"
               ><img
                 src="./assets/images/project/documentation/foto-(18).jpeg"
                 alt="documentation"
-                class="img-fluid preview rounded"
+                class="img-fluid preview"
             /></a>
           </div>
           <div class="col-lg-3 col-md-4 col-6 item mechanical">
             <a
               href="./assets/images/project/documentation/foto-(19).jpeg"
-              class="progressive replace"
+              class="progressive replace rounded"
               ><img
                 src="./assets/images/project/documentation/foto-(19).jpeg"
                 alt="documentation"
-                class="img-fluid preview rounded"
+                class="img-fluid preview"
             /></a>
           </div>
           <div class="col-lg-3 col-md-4 col-6 item civil-work">
             <a
               href="./assets/images/project/documentation/foto-(5).jpeg"
-              class="progressive replace"
+              class="progressive replace rounded"
               ><img
                 src="./assets/images/project/documentation/foto-(5).jpeg"
                 alt="documentation"
-                class="img-fluid preview rounded"
+                class="img-fluid preview"
             /></a>
           </div>
           <div class="col-lg-3 col-md-4 col-6 item civil-work">
             <a
               href="./assets/images/project/documentation/foto-(6).jpeg"
-              class="progressive replace"
+              class="progressive replace rounded"
               ><img
                 src="./assets/images/project/documentation/foto-(6).jpeg"
                 alt="documentation"
-                class="img-fluid preview rounded"
+                class="img-fluid preview"
             /></a>
           </div>
           <div class="col-lg-3 col-md-4 col-6 item mechanical">
             <a
               href="./assets/images/project/documentation/foto-(20).jpeg"
-              class="progressive replace"
+              class="progressive replace rounded"
               ><img
                 src="./assets/images/project/documentation/foto-(20).jpeg"
                 alt="documentation"
-                class="img-fluid preview rounded"
+                class="img-fluid preview"
             /></a>
           </div>
           <div class="col-lg-3 col-md-4 col-6 item mechanical">
             <a
               href="./assets/images/project/documentation/foto-(21).jpeg"
-              class="progressive replace"
+              class="progressive replace rounded"
               ><img
                 src="./assets/images/project/documentation/foto-(21).jpeg"
                 alt="documentation"
-                class="img-fluid preview rounded"
+                class="img-fluid preview"
             /></a>
           </div>
           <div class="col-lg-3 col-md-4 col-6 item civil-work">
             <a
               href="./assets/images/project/documentation/foto-(7).jpeg"
-              class="progressive replace"
+              class="progressive replace rounded"
               ><img
                 src="./assets/images/project/documentation/foto-(7).jpeg"
                 alt="documentation"
-                class="img-fluid preview rounded"
+                class="img-fluid preview"
             /></a>
           </div>
           <div class="col-lg-3 col-md-4 col-6 item civil-work">
             <a
               href="./assets/images/project/documentation/foto-(8).jpeg"
-              class="progressive replace"
+              class="progressive replace rounded"
               ><img
                 src="./assets/images/project/documentation/foto-(8).jpeg"
                 alt="documentation"
-                class="img-fluid preview rounded"
+                class="img-fluid preview"
             /></a>
           </div>
           <div class="col-lg-3 col-md-4 col-6 item mechanical">
             <a
               href="./assets/images/project/documentation/foto-(22).jpeg"
-              class="progressive replace"
+              class="progressive replace rounded"
               ><img
                 src="./assets/images/project/documentation/foto-(22).jpeg"
                 alt="documentation"
-                class="img-fluid preview rounded"
+                class="img-fluid preview"
             /></a>
           </div>
           <div class="col-lg-3 col-md-4 col-6 item mechanical">
             <a
               href="./assets/images/project/documentation/foto-(23).jpeg"
-              class="progressive replace"
+              class="progressive replace rounded"
               ><img
                 src="./assets/images/project/documentation/foto-(23).jpeg"
                 alt="documentation"
-                class="img-fluid preview rounded"
+                class="img-fluid preview"
             /></a>
           </div>
           <div class="col-lg-3 col-md-4 col-6 item civil-work">
             <a
               href="./assets/images/project/documentation/foto-(9).jpeg"
-              class="progressive replace"
+              class="progressive replace rounded"
               ><img
                 src="./assets/images/project/documentation/foto-(9).jpeg"
                 alt="documentation"
-                class="img-fluid preview rounded"
+                class="img-fluid preview"
             /></a>
           </div>
           <div class="col-lg-3 col-md-4 col-6 item civil-work">
             <a
               href="./assets/images/project/documentation/foto-(10).jpeg"
-              class="progressive replace"
+              class="progressive replace rounded"
               ><img
                 src="./assets/images/project/documentation/foto-(10).jpeg"
                 alt="documentation"
-                class="img-fluid preview rounded"
+                class="img-fluid preview"
             /></a>
           </div>
           <div class="col-lg-3 col-md-4 col-6 item mechanical">
             <a
               href="./assets/images/project/documentation/foto-(24).jpeg"
-              class="progressive replace"
+              class="progressive replace rounded"
               ><img
                 src="./assets/images/project/documentation/foto-(24).jpeg"
                 alt="documentation"
-                class="img-fluid preview rounded"
+                class="img-fluid preview"
             /></a>
           </div>
           <div class="col-lg-3 col-md-4 col-6 item mechanical">
             <a
               href="./assets/images/project/documentation/foto-(25).jpeg"
-              class="progressive replace"
+              class="progressive replace rounded"
               ><img
                 src="./assets/images/project/documentation/foto-(25).jpeg"
                 alt="documentation"
-                class="img-fluid preview rounded"
+                class="img-fluid preview"
             /></a>
           </div>
           <div class="col-lg-3 col-md-4 col-6 item civil-work">
             <a
               href="./assets/images/project/documentation/foto-(11).jpeg"
-              class="progressive replace"
+              class="progressive replace rounded"
               ><img
                 src="./assets/images/project/documentation/foto-(11).jpeg"
                 alt="documentation"
-                class="img-fluid preview rounded"
+                class="img-fluid preview"
             /></a>
           </div>
           <div class="col-lg-3 col-md-4 col-6 item civil-work">
             <a
               href="./assets/images/project/documentation/foto-(12).jpeg"
-              class="progressive replace"
+              class="progressive replace rounded"
               ><img
                 src="./assets/images/project/documentation/foto-(12).jpeg"
                 alt="documentation"
-                class="img-fluid preview rounded"
+                class="img-fluid preview"
             /></a>
           </div>
           <div class="col-lg-3 col-md-4 col-6 item mechanical">
             <a
               href="./assets/images/project/documentation/foto-(26).jpeg"
-              class="progressive replace"
+              class="progressive replace rounded"
               ><img
                 src="./assets/images/project/documentation/foto-(26).jpeg"
                 alt="documentation"
-                class="img-fluid preview rounded"
+                class="img-fluid preview"
             /></a>
           </div>
           <div class="col-lg-3 col-md-4 col-6 item mechanical">
             <a
               href="./assets/images/project/documentation/foto-(27).jpeg"
-              class="progressive replace"
+              class="progressive replace rounded"
               ><img
                 src="./assets/images/project/documentation/foto-(27).jpeg"
                 alt="documentation"
-                class="img-fluid preview rounded"
+                class="img-fluid preview"
             /></a>
           </div>
           <div class="col-lg-3 col-md-4 col-6 item civil-work">
             <a
               href="./assets/images/project/documentation/foto-(13).jpeg"
-              class="progressive replace"
+              class="progressive replace rounded"
               ><img
                 src="./assets/images/project/documentation/foto-(13).jpeg"
                 alt="documentation"
-                class="img-fluid preview rounded"
+                class="img-fluid preview"
             /></a>
           </div>
           <div class="col-lg-3 col-md-4 col-6 item civil-work">
             <a
               href="./assets/images/project/documentation/foto-(14).jpeg"
-              class="progressive replace"
+              class="progressive replace rounded"
               ><img
                 src="./assets/images/project/documentation/foto-(14).jpeg"
                 alt="documentation"
-                class="img-fluid preview rounded"
+                class="img-fluid preview"
             /></a>
           </div>
           <div class="col-lg-3 col-md-4 col-6 item mechanical">
             <a
               href="./assets/images/project/documentation/foto-(28).jpeg"
-              class="progressive replace"
+              class="progressive replace rounded"
               ><img
                 src="./assets/images/project/documentation/foto-(28).jpeg"
                 alt="documentation"
-                class="img-fluid preview rounded"
+                class="img-fluid preview"
             /></a>
           </div>
           <div class="col-lg-3 col-md-4 col-6 item mechanical">
             <a
               href="./assets/images/project/documentation/foto-(29).jpeg"
-              class="progressive replace"
+              class="progressive replace rounded"
               ><img
                 src="./assets/images/project/documentation/foto-(29).jpeg"
                 alt="documentation"
-                class="img-fluid preview rounded"
+                class="img-fluid preview"
             /></a>
           </div>
           <div class="col-lg-3 col-md-4 col-6 item civil-work">
             <a
               href="./assets/images/project/documentation/foto-(15).jpeg"
-              class="progressive replace"
+              class="progressive replace rounded"
               ><img
                 src="./assets/images/project/documentation/foto-(15).jpeg"
                 alt="documentation"
-                class="img-fluid preview rounded"
+                class="img-fluid preview"
             /></a>
           </div>
 
           <div class="col-lg-3 col-md-4 col-6 item mechanical">
             <a
               href="./assets/images/project/documentation/foto-(32).jpeg"
-              class="progressive replace"
+              class="progressive replace rounded"
               ><img
                 src="./assets/images/project/documentation/foto-(32).jpeg"
                 alt="documentation"
-                class="img-fluid preview rounded"
+                class="img-fluid preview"
             /></a>
           </div>
           <div class="col-lg-3 col-md-4 col-6 item mechanical">
             <a
               href="./assets/images/project/documentation/foto-(33).jpeg"
-              class="progressive replace"
+              class="progressive replace rounded"
               ><img
                 src="./assets/images/project/documentation/foto-(33).jpeg"
                 alt="documentation"
-                class="img-fluid preview rounded"
+                class="img-fluid preview"
             /></a>
           </div>
         </div>
       </div>
     </section>
+    <section class="space-y section-menu" id="contact-us">
+      <div class="container">
+        <div class="display-4 fw-bold text-center mb-5">
+          Contact <span class="text-yellow">Us</span>
+        </div>
+        <div class="mt-5 g-4 row justify-content-center align-items-center">
+          <div class="col-lg-6 col-md-8 col-12">
+            <img
+              src="./assets/images/contact.png"
+              alt="contact"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-lg-6 col-md-8 col-12 fs-2">
+            <div class="d-flex my-4">
+              <i class="fas fa-envelope"></i>
+              <span class="ms-3 lh-1">admin@eagan.co.id</span>
+            </div>
+            <div class="d-flex my-4">
+              <i class="fas fa-map-marked-alt"></i>
+              <span class="ms-3 lh-1"
+                >Komplek Grand Sungkono 2 Blok D-17 Jl.Mayjend Sungkono
+                Surabaya</span
+              >
+            </div>
+            <div class="d-flex my-4">
+              <i class="fas fa-phone-alt"></i>
+              <span class="ms-3 lh-1">031-510905.566 2786</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="py-4 text-light text-center bg-dark">
+      <div class="container">
+        Cretaed with <i class="fas fa-heart text-danger"></i> &copy;
+        <span class="f-year"></span>
+        , All Rights Reserved
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

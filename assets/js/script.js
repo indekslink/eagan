@@ -1,4 +1,10 @@
 $(document).ready(function () {
+  const webCreated = 2021;
+  const currentYear = new Date().getFullYear();
+
+  document.querySelector("footer .f-year").textContent =
+    currentYear == webCreated ? webCreated : webCreated + " - " + currentYear;
+
   const hamburgerMenu = document.querySelectorAll(".hamburger-menu");
   const navbar = document.querySelector(".value-navbar");
   hamburgerMenu.forEach((hmb) =>
@@ -11,7 +17,7 @@ $(document).ready(function () {
 
     [
       document.querySelector(".to-top"),
-      document.querySelector(".navigation-bottom"),
+      // document.querySelector(".navigation-bottom"),
     ].map((e) => e.classList.toggle("show-navigation", scr > 50));
     actionOnScroll(scr);
   };
@@ -54,6 +60,7 @@ $(document).ready(function () {
     // console.log(menu);
   });
   const sectionMenu = document.querySelectorAll(".section-menu");
+
   function activeMenu(scr) {
     const about = ["#summary", "#mission", "#vision", "#lines-of-business"];
     sectionMenu.forEach((section) => {
@@ -66,6 +73,12 @@ $(document).ready(function () {
     });
   }
 
+  const navFixed = (scr) => {
+    ["bg-light", "fixed-top", "shadow-sm"].forEach((e) => {
+      document.querySelector(".my-nav").classList.toggle(e, scr > 150);
+    });
+  };
+
   const docOffTop = Math.round($("#documentation").offset().top);
   function actionOnScroll(scroll) {
     if (scroll > docOffTop) {
@@ -73,5 +86,6 @@ $(document).ready(function () {
     }
 
     activeMenu(scroll);
+    navFixed(scroll);
   }
 });

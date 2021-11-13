@@ -10,7 +10,9 @@ html .roboto {
 }
 
 /* navbar */
-
+.my-nav {
+  transition: 0.5s ease;
+}
 .my-nav :is(.list-menu a, .list-menu span) {
   font-size: 1rem;
   font-weight: bold;
@@ -315,7 +317,7 @@ section.space-y {
   opacity: 0;
   right: 1rem;
   transition: 0.5s ease;
-  z-index: 99999;
+  z-index: 999;
 }
 .navigation-bottom {
   right: 1.2rem !important;
@@ -377,13 +379,25 @@ section.space-y {
 }
 #legality .my-border {
   /* border: 5px dashed yellow; */
-  padding: 1rem;
+  padding: 2rem 1rem;
   border-radius: 20px;
 
   margin: 0 1rem;
 }
 #documentation .grid .item {
   padding: 0.5rem !important;
+  overflow: hidden;
+}
+#documentation .grid .item a {
+  overflow: hidden;
+}
+#documentation .grid .item a img {
+  transition: 0.5s ease;
+  filter: brightness(70%);
+}
+#documentation .grid .item a img:hover {
+  transform: scale(1.3);
+  filter: brightness(100%);
 }
 #documentation .filter-year {
   position: sticky;
@@ -391,7 +405,7 @@ section.space-y {
   display: flex;
   background-color: var(--light);
   z-index: 2;
-  top: 0;
+  top: 7.5rem;
 }
 /* laptop small */
 @media (max-width: 991.98px) {
@@ -416,14 +430,15 @@ section.space-y {
 
 /* tablet */
 @media (max-width: 767.98px) {
-  .my-grid a svg {
+  /* .my-grid a svg {
     opacity: 1;
-  }
+  } */
   .my-nav .value-navbar {
     transition: 0.5s ease;
     position: fixed;
     inset: 0;
 
+    opacity: 0;
     width: 0;
     z-index: 99999;
     justify-content: center;
@@ -431,16 +446,10 @@ section.space-y {
     overflow: hidden;
     background-image: linear-gradient(45deg, var(--light), white);
   }
-  .my-nav .value-navbar > * {
-    transition: 1s ease;
-    transition-delay: 0.5s;
-    opacity: 0;
-  }
-  .my-nav .value-navbar.show > * {
-    opacity: 1;
-  }
+
   .my-nav .value-navbar.show {
     width: 100% !important;
+    opacity: 1;
   }
   .my-nav .list-menu {
     margin: 1rem 0rem;
@@ -461,7 +470,8 @@ section.space-y {
     z-index: 99999999;
   }
   .to-top.show-navigation {
-    bottom: 3rem;
+    /* bottom: 3rem; */
+    bottom: 1rem;
   }
   .navigation-bottom.show-navigation {
     bottom: 1rem;
