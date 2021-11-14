@@ -52,9 +52,7 @@ $(document).ready(function () {
   });
 
   const navLink = Array.from(
-    document.querySelectorAll(
-      ".my-nav .menus li:not(.has-child,.list-child-menu) a"
-    )
+    document.querySelectorAll(".my-nav .menus li.list-menu a")
   );
   const linkHasChild = Array.from(
     document.querySelectorAll(".my-nav .menus .has-child span")
@@ -81,6 +79,24 @@ $(document).ready(function () {
     });
   }
 
+  navLink.forEach((e) => {
+    e.addEventListener("click", function () {
+      let section = document.querySelector(
+        `#${e.getAttribute("data-section")}`
+      );
+      window.scrollTo(0, section.offsetTop - 100);
+    });
+  });
+
+  document
+    .querySelector("button.learn-more")
+    .addEventListener("click", function () {
+      window.scrollTo(
+        0,
+        document.querySelector("section#summary").offsetTop - 100
+      );
+    });
+
   const navFixed = (scr) => {
     ["bg-light", "fixed-top", "shadow-sm"].forEach((e) => {
       document.querySelector(".my-nav").classList.toggle(e, scr > 150);
@@ -95,5 +111,12 @@ $(document).ready(function () {
 
     activeMenu(scroll);
     navFixed(scroll);
+
+    // aos
+    AOS.init({
+      once: true,
+      delay: 100,
+      ease: "linear",
+    });
   }
 });

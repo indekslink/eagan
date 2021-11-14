@@ -25,6 +25,9 @@
       crossorigin="anonymous"
     />
 
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- font awesome -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
 
@@ -43,7 +46,14 @@
 
     <div
       id="home"
-      class="full-height section-menu hero-content d-flex flex-column"
+      class="
+        full-height
+        section-menu
+        hero-content
+        d-flex
+        flex-column
+        overflow-hidden
+      "
     >
       <div class="my-nav">
         <div class="container">
@@ -126,7 +136,7 @@
             class="col-lg-7 text-lg-start text-center tablet-img-hero-content"
           >
             <div class="title lh-1">PT. Eagan Warsana Energi</div>
-            <div class="subtitle lh-sm">
+            <div class="subtitle lh-sm fs-3">
               Persistent to the passion for customers, quality foucs, safety
               environment, personel intergrity, team work and fun
             </div>
@@ -142,13 +152,14 @@
               src="./assets/images/img.png"
               alt="img-hero-content"
               class="img-fluid"
+              id="img-hero-content"
             />
           </div>
         </div>
       </div>
     </div>
     <div id="about">
-      <section class="space-y section-menu">
+      <!-- <section class="space-y section-menu">
         <div class="container">
           <div
             id="carouselExampleIndicators"
@@ -266,16 +277,126 @@
             </div>
           </div>
         </div>
-      </section>
-      <section class="space-y section-menu yellow" id="lines-of-business">
+      </section> -->
+
+      <section class="my-4 overflow-hidden" id="summary">
         <div class="container">
-          <div class="display-4 fw-bold mb-5 text-center">
+          <div class="row align-items-center text-center">
+            <div class="col-lg-6 col-md-10 col-12">
+              <img
+                src="./assets/images/summary-1.png"
+                alt=""
+                data-aos="fade-up"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-lg-6 col-md-10 col-12">
+              <div class="title display-4 mb-4">
+                <span class="fw-bold">Summary</span>
+              </div>
+              <div
+                class="description lh-md"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                PT. Eagan Warsana Energi, EAGAN, is a growing medium size
+                Engineering Procurement Construction (EPC) company which is
+                specializing in civil engineering, platform work, pipeline
+                system, steel structure and electrical services. Establised on
+                March 2011, EAGAN has already proven capable of playing a sound
+                role in civil, mechanical and steel structures projects with all
+                project performed in excellent condition thoughout Indonesia
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="my-4 overflow-hidden" id="vision">
+        <div class="container">
+          <div class="row align-items-center text-center flex-row-reverse">
+            <div class="col-lg-6 col-md-10 col-12">
+              <img
+                data-aos="fade-up"
+                src="./assets/images/visi.png"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-lg-6 col-md-10 col-12">
+              <div class="title display-4 mb-4">
+                <span class="fw-bold">Vision</span>
+              </div>
+              <div
+                class="description lh-md"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                Our aim is ultimately become a trustworthy and an
+                excellent-leading Engineering Procurement Construction (EPC)
+                company specializing in civil engineer, mechanical electrical
+                and steel structure work with the purspose of giving a
+                customer-statisfaction service to all stakeholders
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="my-4 overflow-hidden" id="mission">
+        <div class="container">
+          <div class="row align-items-center text-center">
+            <div class="col-lg-6 col-md-10 col-12">
+              <img
+                data-aos="fade-up"
+                src="./assets/images/misi.png"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-lg-6 col-md-10 col-12">
+              <div class="title display-4 mb-4">
+                <span class="fw-bold">Mission</span>
+              </div>
+              <div
+                class="description lh-md text-start"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <ul>
+                  <li class="my-2">
+                    Utilizing a moderate project management support system to
+                    ensure our commitment to the clients in term of budget and
+                    schedule
+                  </li>
+                  <li class="my-2">
+                    Operating a tight company policy and continuous improvement
+                    in Quality and Safety
+                  </li>
+                  <li class="my-2">
+                    Developing an excellent communication system along with the
+                    responsible solution to our strategic partners and clients
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="space-y section-menu yellow overflow-hidden"
+        id="lines-of-business"
+      >
+        <div class="container">
+          <div class="display-4 fw-bold mb-5 text-center" data-aos="fade-up">
             <span class=""
               >Lines of <span class="text-yellow">Business</span></span
             >
           </div>
           <div class="row gy-5 justify-content-center">
-            <div class="col-lg-3 col-md-4 col-6">
+            <div
+              class="col-lg-3 col-md-4 col-6"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
               <div class="fs-4 mb-2 fw-bold text-uppercase">Civil</div>
               <div class="d-inline-block">
                 <div class="items">Cut and Fill</div>
@@ -287,7 +408,11 @@
                 <div class="items">Building and Others</div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-4 col-6">
+            <div
+              class="col-lg-3 col-md-4 col-6"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
               <div class="fs-4 mb-2 fw-bold text-uppercase">Power Plant</div>
               <div class="d-inline-block">
                 <div class="items">Steel Structure</div>
@@ -300,7 +425,11 @@
                 <div class="items">Refractory Sytem and Other</div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-4 col-6">
+            <div
+              class="col-lg-3 col-md-4 col-6"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
               <div class="fs-4 mb-2 fw-bold text-uppercase">
                 Oil and Gas Service
               </div>
@@ -310,7 +439,11 @@
                 <div class="items">Pipeline System</div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-4 col-6">
+            <div
+              class="col-lg-3 col-md-4 col-6"
+              data-aos="fade-up"
+              data-aos-delay="700"
+            >
               <div class="fs-4 mb-2 fw-bold text-uppercase">
                 Steel Structure
               </div>
@@ -326,10 +459,10 @@
       </section>
     </div>
 
-    <section class="space-y section-menu" id="legality">
+    <section class="space-y section-menu overflow-hidden" id="legality">
       <div class="container">
-        <div class="row gy-5 justify-content-center">
-          <div class="col-11 col-md-8 my-border shadow-lg">
+        <div class="row gy-5 mt-5 justify-content-center">
+          <div class="col-11 col-md-8 my-border shadow" data-aos="zoom-in-up">
             <div class="display-4 fw-bold text-center mb-5">Legality</div>
             <ul class="list-group list-group-flush">
               <li class="list-group-item px-0">
@@ -479,7 +612,7 @@
     <div id="projects">
       <section class="space-y section-menu" id="experience">
         <div class="container">
-          <div class="display-4 fw-bold text-center mb-5">
+          <div class="display-4 fw-bold text-center mb-5" data-aos="fade-up">
             Project <span class="text-yellow">Experience</span>
           </div>
 
@@ -487,8 +620,6 @@
             <a
               href="./assets/images/project/experience/1.png"
               class="progressive replace"
-              data-bs-toggle="modal"
-              data-bs-target="#owner-1"
             >
               <i class="fas fa-info"></i>
               <img
@@ -497,7 +628,7 @@
                 class="preview"
               />
               <!-- Modal -->
-              <div
+              <!-- <div
                 class="modal fade"
                 id="owner-1"
                 tabindex="-1"
@@ -560,12 +691,10 @@
                     </div>
                   </div>
                 </div>
-              </div> </a
+              </div>  --> </a
             ><a
               href="./assets/images/project/experience/2.png"
               class="progressive replace"
-              data-bs-toggle="modal"
-              data-bs-target="#owner-2"
             >
               <i class="fas fa-info"></i>
               <img
@@ -574,7 +703,7 @@
                 class="preview"
               />
               <!-- Modal -->
-              <div
+              <!-- <div
                 class="modal fade"
                 id="owner-2"
                 tabindex="-1"
@@ -632,7 +761,7 @@
                     </div>
                   </div>
                 </div>
-              </div> </a
+              </div> --> </a
             ><a
               href="./assets/images/project/experience/3.png"
               class="progressive replace"
@@ -934,19 +1063,35 @@
         </div>
       </section>
       <section class="space-y section-menu" id="documentation">
-        <div class="display-4 fw-bold text-center mb-5">
+        <div class="display-4 fw-bold text-center mb-5" data-aos="fade-up">
           Project <span class="text-yellow">Documentation</span>
         </div>
         <div class="filter-year mt-5 p-2">
           <button
             class="btn-warning fw-bold fs-5 btn"
             id="btn1"
+            data-aos="fade-up"
+            data-aos-delay="200"
             data-filter="*"
           >
             All
           </button>
-          <button class="btn fs-5" data-filter=".civil-work">Civil Work</button>
-          <button class="btn fs-5" data-filter=".mechanical">Mechanical</button>
+          <button
+            class="btn fs-5"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-filter=".civil-work"
+          >
+            Civil Work
+          </button>
+          <button
+            class="btn fs-5"
+            data-aos="fade-up"
+            data-aos-delay="400"
+            data-filter=".mechanical"
+          >
+            Mechanical
+          </button>
         </div>
         <div class="container">
           <div class="row mt-5 grid">
@@ -1286,9 +1431,9 @@
       </section>
     </div>
 
-    <section class="space-y section-menu" id="contact-us">
+    <section class="space-y section-menu overflow-hidden" id="contact-us">
       <div class="container">
-        <div class="display-4 fw-bold text-center mb-5">
+        <div class="display-4 fw-bold text-center mb-5" data-aos="fade-up">
           Contact <span class="text-yellow">Us</span>
         </div>
         <div class="mt-5 g-4 row justify-content-center align-items-center">
@@ -1297,21 +1442,22 @@
               src="./assets/images/contact.png"
               alt="contact"
               class="img-fluid"
+              data-aos="fade-right"
             />
           </div>
           <div class="col-lg-6 col-md-8 col-12 fs-2">
-            <div class="d-flex my-4">
+            <div class="d-flex my-4" data-aos="fade-left" data-aos-delay="200">
               <i class="fas fa-envelope"></i>
               <span class="ms-3 lh-1">admin@eagan.co.id</span>
             </div>
-            <div class="d-flex my-4">
+            <div class="d-flex my-4" data-aos="fade-left" data-aos-delay="300">
               <i class="fas fa-map-marked-alt"></i>
               <span class="ms-3 lh-1"
                 >Komplek Grand Sungkono 2 Blok D-17 Jl.Mayjend Sungkono
                 Surabaya</span
               >
             </div>
-            <div class="d-flex my-4">
+            <div class="d-flex my-4" data-aos="fade-left" data-aos-delay="400">
               <i class="fas fa-phone-alt"></i>
               <span class="ms-3 lh-1">031-510905.566 2786</span>
             </div>
@@ -1334,6 +1480,8 @@
 
     <script src="./assets/js/jquery.js"></script>
     <script src="./assets/js/isotope.min.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
