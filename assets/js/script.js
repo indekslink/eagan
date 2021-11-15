@@ -104,6 +104,7 @@ $(document).ready(function () {
   };
 
   const docOffTop = Math.round($("#documentation").offset().top);
+
   function actionOnScroll(scroll) {
     if (scroll > docOffTop) {
       $("#documentation .filter-year #btn1").trigger("click");
@@ -119,4 +120,10 @@ $(document).ready(function () {
       ease: "linear",
     });
   }
+
+  // lightbox
+  $("#documentation .grid a").magnificPopup({
+    type: "image",
+    gallery: { enabled: true },
+  });
 });
