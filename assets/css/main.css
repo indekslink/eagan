@@ -321,6 +321,24 @@ section.space-y {
 #lines-business .items {
   padding: 0.25rem 0;
 }
+.wa-me {
+  position: fixed;
+  z-index: 999;
+  bottom: 1rem;
+  left: 1rem;
+  width: 3rem;
+  height: 3rem;
+  animation: bounce 2s linear infinite;
+}
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
 .to-top,
 .navigation-bottom {
   position: fixed;
