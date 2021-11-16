@@ -1,4 +1,6 @@
 $(document).ready(function () {
+  document.body.classList.add("overflow-hidden");
+
   const webCreated = 2021;
   const currentYear = new Date().getFullYear();
 
@@ -105,9 +107,13 @@ $(document).ready(function () {
 
   const docOffTop = Math.round($("#documentation").offset().top);
 
+  let triggerClick = true;
   function actionOnScroll(scroll) {
     if (scroll > docOffTop) {
-      $("#documentation .filter-year #btn1").trigger("click");
+      if (triggerClick) {
+        $("#documentation .filter-year #btn1").trigger("click");
+        triggerClick = false;
+      }
     }
 
     activeMenu(scroll);
@@ -126,4 +132,9 @@ $(document).ready(function () {
     type: "image",
     gallery: { enabled: true },
   });
+
+  window.onload = function () {
+    document.body.classList.remove("overflow-hidden");
+    document.getElementById("loading").classList.add("hide");
+  };
 });
