@@ -87,6 +87,7 @@ $(document).ready(function () {
         `#${e.getAttribute("data-section")}`
       );
       window.scrollTo(0, section.offsetTop - 100);
+      toggleMenu();
     });
   });
 
