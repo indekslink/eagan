@@ -408,6 +408,9 @@ section.space-y {
 .my-grid img {
   width: 100%;
 }
+#lines-of-business .items {
+  margin: 0.5rem 0;
+}
 #legality .my-border {
   /* border: 5px dashed yellow; */
   padding: 2rem 1rem;
@@ -457,19 +460,19 @@ section.space-y {
   align-items: center;
   justify-content: center;
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   background-image: url(../images/logo.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 70px;
+  background-size: 90px;
 }
 .lds-ring div {
   box-sizing: border-box;
   display: block;
   position: absolute;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   margin: 8px;
   border: 9px solid var(--yellow);
   border: 8px solid var(--yellow);
@@ -584,9 +587,9 @@ section.space-y {
     border: none;
     background-color: transparent;
   }
-  .my-grid {
+  /* .my-grid {
     columns: 2;
-  }
+  } */
   .my-nav .navbar-brand {
     width: 90px;
   }
