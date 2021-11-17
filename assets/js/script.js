@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  document.body.classList.add("overflow-hidden");
+  // document.body.classList.add("overflow-hidden");
 
   const webCreated = 2021;
   const currentYear = new Date().getFullYear();
@@ -87,7 +87,9 @@ $(document).ready(function () {
         `#${e.getAttribute("data-section")}`
       );
       window.scrollTo(0, section.offsetTop - 100);
-      toggleMenu();
+      if (window.innerWidth < 769) {
+        toggleMenu();
+      }
     });
   });
 
@@ -112,7 +114,9 @@ $(document).ready(function () {
   function actionOnScroll(scroll) {
     if (scroll > docOffTop) {
       if (triggerClick) {
-        $("#documentation .filter-year #btn1").trigger("click");
+        for (let index = 0; index < 3; index++) {
+          $("#documentation .filter-year #btn1").trigger("click");
+        }
         triggerClick = false;
       }
     }
@@ -134,8 +138,8 @@ $(document).ready(function () {
     gallery: { enabled: true },
   });
 
-  window.onload = function () {
-    document.body.classList.remove("overflow-hidden");
-    document.getElementById("loading").classList.add("hide");
-  };
+  // window.onload = function () {
+  //   document.body.classList.remove("overflow-hidden");
+  //   document.getElementById("loading").classList.add("hide");
+  // };
 });
