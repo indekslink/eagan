@@ -86,7 +86,7 @@ $(document).ready(function () {
       let section = document.querySelector(
         `#${e.getAttribute("data-section")}`
       );
-      window.scrollTo(0, section.offsetTop - 100);
+      window.scrollTo(0, section.offsetTop - 90);
       if (window.innerWidth < 769) {
         toggleMenu();
       }
@@ -98,7 +98,7 @@ $(document).ready(function () {
     .addEventListener("click", function () {
       window.scrollTo(
         0,
-        document.querySelector("section#summary").offsetTop - 100
+        document.querySelector("section#summary").offsetTop - 90
       );
     });
 
@@ -114,9 +114,10 @@ $(document).ready(function () {
   function actionOnScroll(scroll) {
     if (scroll > docOffTop) {
       if (triggerClick) {
-        for (let index = 0; index < 3; index++) {
-          $("#documentation .filter-year #btn1").trigger("click");
-        }
+        $("#documentation .filter-year #btn1").trigger("click");
+        // setTimeout(() => {
+        //   $("#documentation .filter-year #btn1").trigger("click");
+        // }, 300);
         triggerClick = false;
       }
     }
