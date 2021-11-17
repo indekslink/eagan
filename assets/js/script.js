@@ -102,6 +102,17 @@ $(document).ready(function () {
       );
     });
 
+  document
+    .querySelectorAll("#documentation .filter-year button")
+    .forEach((filter) => {
+      filter.addEventListener("click", function () {
+        window.scrollTo(
+          0,
+          document.querySelector("section#documentation").offsetTop - 90
+        );
+      });
+    });
+
   const navFixed = (scr) => {
     ["bg-light", "fixed-top", "shadow-sm"].forEach((e) => {
       document.querySelector(".my-nav").classList.toggle(e, scr > 150);
